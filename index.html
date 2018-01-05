@@ -1,7 +1,916 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+	<head>
+		<title>Mike</title>
+		<link rel="stylesheet" type="text/css" href="universal.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+		<script src="jquery-3.2.1.min.js"></script>
+	</head>
+	<body class="">
+		<div id="homeContainer" class="homeContainer">
+			<!--img id="homeIconMike" class="homeIcon" src="MikeProfile.jpg" style="height: 50vh; width: 50vh; border-radius: 50%;">
+			<i id="homeIconProjects"  class="material-icons homeIcon" style="height: 50vh; width: 50vh; font-size: 50vh;">build</i>
+			<i id="homeIconDoodles"  class="material-icons homeIcon" style="width: 60vh; height: 60vh; font-size: 60vh;">gesture</i>
+			<!--a id="homeIconMail" class="mdi mdi-email homeIcon" style="height: 60vh; width: 60vh; font-size: 60vh;"></a>
+			<a id="homeIconLinkedin" class="mdi mdi-linkedin-box homeIcon" style="height: 60vh; width: 60vh; font-size: 60vh;"></a-->
+			<div style="grid-area: h1; display: flex; flex-direction: column; justify-content: center; background: #222222;">
+				<p class="homeLinks">
+					<span style="font-weight: 800; font-size: 6rem; letter-spacing: 0; font-family: 'Dosis', sans-serif;" onclick="scrollTo();">M<span style="color: #4fc3f7;">i</span>KE</span><br>
+					<br>
+					<a id="homeLinkMike" class="homeLink" style="font-weight: 100;" onclick="scrollTo();">&nbsp;&nbsp;INTR0</a><br>
+					<a id="homeLinkProjects" class="homeLink" style="font-weight: 100;" onclick="scrollTo();">&nbsp;&nbsp;PR0JECTS</a><br>
+					<a id="homeLinkDoodles" class="homeLink" style="font-weight: 100;" onclick="scrollTo();">&nbsp;&nbsp;D00DLES</a><br>
+					<a id="homeLinkPhotos" class="homeLink" style="font-weight: 100;" onclick="scrollTo();">&nbsp;&nbsp;PH0T0S</a><br>
+					<a id="homeLinkContact" class="homeLink" style="font-weight: 100;" onclick="scrollTo();">&nbsp;&nbsp;C0NTACT</a>
+				</p>
+			</div>
+			<div style="grid-area: h2;">
+				<img class="mikeImage" src="MikeProfile.jpg">
+			</div>
+			<!--a id="homeLinkMail" class="mdi mdi-email homeContactMeLink" style="position: relative; z-index: 2;"></a>
+			<div class="homeContactMe">
+				<a id="homeLinkMail" class="mdi mdi-email homeContactMeLink"></a>
+				<a id="homeLinkLinkedin" class="mdi mdi-linkedin-box homeContactMeLink"></a>
+			</div-->
+		</div>
+
+		<div id="navContainer" style="height: 51px; width: 100%; position: relative; position: fixed; top: 0; z-index: 2;">
+			<div style="height: 50px; padding: 0 5%; width: 100%; font-weight: 300;">
+				<div style="width: 100%; margin: 0 auto;">
+					<a class="z-depth-1 resumeButton" href="mikeResume.pdf" target="_blank" style="display: none;">DOWNLOAD RESUME</a>
+					<a id="navItem5" class="navItem">C0NTACT</a>
+					<a id="navItem4" class="navItem">PH0T0S</a>
+					<a id="navItem3" class="navItem">D00DLES</a>
+					<a id="navItem2" class="navItem">PR0JECTS</a>
+					<a id="navItem1" class="navItem">INTR0</a>
+				</div>
+			</div>
+			<div class="navBottom"></div>
+		</div>
+
+		<div style="background: #f5f5f5;">
+
+			<div style="width: 100%; margin: 0 auto;">
+
+				<div id="mikeContainer" class="sectionContainer">
+					<div class="sectionSubContainer">
+						<!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #e0e0e0; text-align: center;">MiKE</p-->
+						<p id="sectionSubtitleDoodles" class="sectionSubtitle unscrolled">Hey! I'm Mike Ly.</p>
+
+						<div style="height: 8vh;"></div>
+
+						<p style="font-size: 2rem; font-weight: 100; color: #222222; line-height: 4rem; text-align: left; margin: 0; text-align: left;">
+							I'm an <span style="font-size: 2.2rem; font-weight: 300; color: #222222;">Emory University</span> sophomore from Irvine, CA with a passion for <span style="font-size: 2.2rem; font-weight: 300; color: #222222;">software</span> + <span style="font-size: 2.2rem; font-weight: 300; color: #222222;">web development</span>. I currently study <span style="font-size: 2.2rem; font-weight: 300; color: #222222;">Computer Science</span> + <span style="font-size: 2.2rem; font-weight: 300; color: #222222;">Mathematics</span> and am cofounder + lead developer of <span style="font-size: 2.2rem; font-weight: 300; color: #222222;">FetchMi</span>. During my free time I enjoy playing soccer, piano, and photography.
+						</p>
+
+						<div style="height: 8vh;"></div>
+
+						<div>
+							<div class="z-depth-0" style="font-size: 1rem; font-weight: 100; letter-spacing: 1px; margin: 0; padding: 0 10vw; border-radius: 5px;">
+								<p style="font-weight: 300; margin: 0; float: left;">JavaScript</p>
+								<p style="font-weight: 100; margin: 0; float: right;">Comfortable</p>
+								<div style="height: 4px; clear: both;"></div>
+								<div class="z-depth-1" style="width: 100%; height: 24px; border-radius: 12px; background: #fff; overflow: hidden; border: 0px solid #2f2f2f;">
+									<div id="experienceJavaScript" class="unscrolled experienceBar experienceBarComfortable" ></div>
+								</div>
+
+								<div style="height: 20px;"></div>
+								<p style="font-weight: 300; margin: 0; float: left;">HTML/CSS</p>
+								<p style="font-weight: 100; margin: 0; float: right;">Comfortable</p>
+								<div style="height: 4px; clear: both;"></div>
+								<div class="z-depth-1" style="width: 100%; height: 24px; border-radius: 12px; background: #fff; overflow: hidden; border: 0px solid #2f2f2f;">
+									<div id="experienceHTMLCSS" class="unscrolled experienceBar experienceBarComfortable"></div>
+								</div>
+
+								<div style="height: 20px;"></div>
+								<p style="font-weight: 300; margin: 0; float: left;">Java</p>
+								<p style="font-weight: 100; margin: 0; float: right;">Comfortable</p>
+								<div style="height: 4px; clear: both;"></div>
+								<div class="z-depth-1" style="width: 100%; height: 24px; border-radius: 12px; background: #fff; overflow: hidden; border: 0px solid #2f2f2f;">
+									<div id="experienceJava" class="unscrolled experienceBar experienceBarComfortable"></div>
+								</div>
+
+								<div style="height: 20px;"></div>
+								<p style="font-weight: 300; margin: 0; float: left;">SQL</p>
+								<p style="font-weight: 100; margin: 0; float: right;">Familiar</p>
+								<div style="height: 4px; clear: both;"></div>
+								<div class="z-depth-1" style="width: 100%; height: 24px; border-radius: 12px; background: #fff; overflow: hidden; border: 0px solid #2f2f2f;">
+									<div id="experienceSQL" class="unscrolled experienceBar experienceBarFamiliar"></div>
+								</div>
+
+								<div style="height: 20px;"></div>
+								<p style="font-weight: 300; margin: 0; float: left;">PHP</p>
+								<p style="font-weight: 100; margin: 0; float: right;">Familiar</p>
+								<div style="height: 4px; clear: both;"></div>
+								<div class="z-depth-1" style="width: 100%; height: 24px; border-radius: 12px; background: #fff; overflow: hidden; border: 0px solid #2f2f2f;">
+									<div id="experiencePHP" class="unscrolled experienceBar experienceBarFamiliar"></div>
+								</div>
+
+								<div style="height: 20px;"></div>
+								<p style="font-weight: 300; margin: 0; float: left;">Python</p>
+								<p style="font-weight: 100; margin: 0; float: right;">Familiar</p>
+								<div style="height: 4px; clear: both;"></div>
+								<div class="z-depth-1" style="width: 100%; height: 24px; border-radius: 12px; background: #fff; overflow: hidden; border: 0px solid #2f2f2f;">
+									<div id="experiencePython" class="unscrolled experienceBar experienceBarFamiliar"></div>
+								</div>
+
+								<div style="height: 20px;"></div>
+								<p style="font-weight: 300; margin: 0; float: left;">Photoshop</p>
+								<p style="font-weight: 100; margin: 0; float: right;">Familiar</p>
+								<div style="height: 4px; clear: both;"></div>
+								<div class="z-depth-1" style="width: 100%; height: 24px; border-radius: 12px; background: #fff; overflow: hidden; border: 0px solid #2f2f2f;">
+									<div id="experiencePhotoshop" class="unscrolled experienceBar experienceBarFamiliar"></div>
+								</div>
+
+								<div style="height: 20px;"></div>
+								<p style="font-weight: 300; margin: 0; float: left;">C</p>
+								<p style="font-weight: 100; margin: 0; float: right;">Beginner</p>
+								<div style="height: 4px; clear: both;"></div>
+								<div class="z-depth-1" style="width: 100%; height: 24px; border-radius: 12px; background: #fff; overflow: hidden; border: 0px solid #2f2f2f;">
+									<div id="experienceC" class="unscrolled experienceBar experienceBarBeginner"></div>
+								</div>
+
+								<div style="height: 20px;"></div>
+								<p style="font-weight: 300; margin: 0; float: left;">Swift/Xcode</p>
+								<p style="font-weight: 100; margin: 0; float: right;">Beginner</p>
+								<div style="height: 4px; clear: both;"></div>
+								<div class="z-depth-1" style="width: 100%; height: 24px; border-radius: 12px; background: #fff; overflow: hidden; border: 0px solid #2f2f2f;">
+									<div id="experienceSwiftXcode" class="unscrolled experienceBar experienceBarBeginner"></div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="projectsContainer" class="sectionContainer" style="background: #fafafa;">	
+					<div class="sectionSubContainer">					
+
+						<!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #e0e0e0; text-align: center;">PR0JECTS</p-->
+						<p id="sectionSubtitleProjects" class="sectionSubtitle unscrolled">Here's my work.</p>
+						<div style="height: 8vh;"></div>
+
+						<div class="projectsGrid">
+
+							<div class="z-depth-1 projectsSubGrid" style="grid-area: card1;">
+								<div class="projectCard" style="grid-area: card;">
+									<div class="projectCardCover" style="background: #fff;">
+										<p style="font-size: 2.5rem; color: #222222; font-weight: 300; text-align: center;">Fetch<span style="color: #4db6ac;">Mi</span></p>
+									</div>
+								</div>
+								<div style="grid-area: description; display: flex; flex-direction: column; justify-content: center;">
+									<p style="margin: 0; font-size: 1.2rem; font-weight: 100; padding-left: 24px;">
+										<a class="projectLink" href="https://fetchmi.com" target="_blank"><span style="font-size: 1.5rem; font-weight: 300;">FetchMi&nbsp;<i class="material-icons" style="color: #2196f3;">open_in_new</i></a></span><br>
+										<span style="font-weight: 300; color: #757575;">A website connecting people to service companies in the Atlanta area.</span><br>
+										<br>
+										<span style="font-weight: 300;">Started:</span>&nbsp; May 2017<br>
+										<span style="font-weight: 300;">Company:</span>&nbsp; Qindian LLC.<br>
+										<span style="font-weight: 300;">Role:</span>&nbsp; Co-founder, Lead Developer<br>
+										<span style="font-weight: 300;">Languages:</span>&nbsp;  JavaScript, HTML/CSS, SQL, PHP<br>
+										<span style="font-weight: 300;">Frameworks:</span>&nbsp; Materialize, CodeIgniter<br>
+									</p>
+								</div>
+							</div>
+
+							<div class="z-depth-1 projectsSubGrid" style="grid-area: card2;">
+								<div class="projectCard" target="_blank" style="grid-area: card;">
+									<div class="projectCardCover" style="background: #002878;">
+										<img src="duckArt.png" style="height: auto; width: 50%; margin: 0 auto; object-fit: ;">
+									</div>
+								</div>
+								<div style="grid-area: description; display: flex; flex-direction: column; justify-content: center;">
+									<p style="margin: 0; font-size: 1.2rem; font-weight: 100; padding-left: 24px;">
+										<span style="font-size: 1.5rem; font-weight: 300;">What the DUC? <span style="font-weight: 100; color: #ef9a9a;">&nbsp;[in progress]</span></span><br>
+										<span style="font-weight: 300; color: #757575;">An iOS app for Emory's main dining hall.</span><br>
+										<br>
+										<span style="font-weight: 300;">Started:</span>&nbsp; November 2017<br>
+										<span style="font-weight: 300;">Role:</span>&nbsp; iOS Developer<br>
+										<span style="font-weight: 300;">Languages:</span>&nbsp; Swift<br>
+										<span style="font-weight: 300;">Technologies:</span>&nbsp; Xcode<br>
+									</p>
+								</div>
+							</div>
+
+							<div class="z-depth-1 projectsSubGrid" style="grid-area: card3;">
+								<div class="projectCard" target="_blank" style="grid-area: card;">
+									<div class="projectCardCover" style="background: #fff;">
+										<img src="websiteIMG4.png" style="height: 100%; width: 100%; object-fit: cover;">
+									</div>
+								</div>
+								<div style="grid-area: description; display: flex; flex-direction: column; justify-content: center;">
+									<p style="margin: 0; font-size: 1.2rem; font-weight: 100; padding-left: 24px;">
+										<span style="font-size: 1.5rem; font-weight: 300;">Personal Website</span><br>
+										<span style="font-weight: 300; color: #757575;">This was a blast to make. I hope you like it!</span><br>
+										<br>
+										<span style="font-weight: 300;">Started:</span>&nbsp; October 2017<br>
+										<span style="font-weight: 300;">Role:</span>&nbsp; Myself<br>
+										<span style="font-weight: 300;">Languages:</span>&nbsp; HTML/CSS, JavaScript<br>
+										<span style="font-weight: 300;">Frameworks:</span>&nbsp; None<br>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="doodlesContainer" class="sectionContainer">					<div class="sectionSubContainer">
+						<!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #e0e0e0; text-align: center;">D00DLES</p-->
+						<p id="sectionSubtitleDoodles" class="sectionSubtitle unscrolled">Just for fun.</p>
+						<div style="height: 8vh;"></div>
+						<div class="z-depth-1" style="width: 100%; height: auto; padding: 32px; border-radius: 5px; background: #fff;">
+							<div class="TTTContainer">
+								<div style="height: 100%; width: 100%; float: left; display: flex; flex-direction: column; justify-content: center; grid-area: c1; position: relative;">
+									<div class="TTTBox">
+										<a id="b0" class="TTTSpot" data-spot="0" style="grid-area: b0;">
+											<i class="material-icons TTTIcon"></i>
+										</a>
+										<a id="b1" class="TTTSpot" data-spot="1" style="grid-area: b1;">
+											<i class="material-icons TTTIcon"></i>
+										</a>
+										<a id="b2" class="TTTSpot" data-spot="2" style="grid-area: b2;">
+											<i class="material-icons TTTIcon"></i>
+										</a>
+										<a id="b3" class="TTTSpot" data-spot="3" style="grid-area: b3;">
+											<i class="material-icons TTTIcon"></i>
+										</a>
+										<a id="b4" class="TTTSpot" data-spot="4" style="grid-area: b4;">
+											<i class="material-icons TTTIcon"></i>
+										</a>
+										<a id="b5" class="TTTSpot" data-spot="5" style="grid-area: b5;">
+											<i class="material-icons TTTIcon"></i>
+										</a>
+										<a id="b6" class="TTTSpot" data-spot="6" style="grid-area: b6;">
+											<i class="material-icons TTTIcon"></i>
+										</a>
+										<a id="b7" class="TTTSpot" data-spot="7" style="grid-area: b7;">
+											<i class="material-icons TTTIcon"></i>
+										</a>
+										<a id="b8" class="TTTSpot" data-spot="8" style="grid-area: b8;">
+											<i class="material-icons TTTIcon"></i>
+										</a>
+									</div>
+									<div id="TTTgameOver" class="TTTgameOver">
+										<p id="TTTgameOverText" class="z-depth-3 TTTgameOverText"></p>
+										<a id="TTTrenew" class="z-depth-3 TTTrenew">
+											<i class="material-icons TTTrenewIcon">autorenew</i>
+										</a>
+									</div>
+								</div>
+								<div style="float: left; width: auto; grid-area: c2; padding: 0 10%;">
+									<p style="font-weight: 400; letter-spacing: 1px; font-size: 2rem; line-height: 2rem; margin: 0; color: #757575;">Tic-Tac-Toe Minimax</p>
+									<p style="font-weight: 100; letter-spacing: 1px; font-size: 1.2rem; margin: 6px 0; color: #222222;">
+										<span style="font-size: 1.5rem; line-height: 1.5rem;">An unbeatable Tic-Tac-Toe game</span><br>
+										<br>
+										<span style="font-weight: 300;">Languages:</span> JavaScript <br>
+										<span style="font-weight: 300;">References:</span> Minimax Algorithm <br>
+										<span style="font-weight: 300;">Completed:</span> November 2017 <br>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="photosContainer" class="sectionContainer" style="background: #fafafa;">		
+					<p id="sectionSubtitleDoodles" class="sectionSubtitle unscrolled">My snapshots.</p>
+					<div style="height: 8vh;"></div>
+					<div class="photosGrid">
+						<div style="grid-area: p1;">
+							<img class="z-depth-3 photosPhoto" src="images/image1Cropped.jpg">
+						</div>
+						<div style="grid-area: p2;">
+							<img class="z-depth-3 photosPhoto" src="images/image2Cropped.jpg">
+						</div>
+						<div style="grid-area: p3;">
+							<img class="z-depth-3 photosPhoto" src="images/image3Cropped.jpg">
+						</div>
+						<div style="grid-area: p4;">
+							<img class="z-depth-3 photosPhoto" src="images/image4Cropped.jpg">
+						</div>
+						<div style="grid-area: p5;">
+							<img class="z-depth-3 photosPhoto" src="images/image5Cropped.jpg">
+						</div>
+						<div style="grid-area: p6;">
+							<img class="z-depth-3 photosPhoto" src="images/image6Cropped.jpg">
+						</div>
+						<div style="grid-area: p7;">
+							<img class="z-depth-3 photosPhoto" src="images/image7Cropped.jpg">
+						</div>
+						<div style="grid-area: p8;">
+							<img class="z-depth-3 photosPhoto" src="images/image8Cropped.jpg">
+						</div>
+						<div style="grid-area: p9;">
+							<img class="z-depth-3 photosPhoto" src="images/image9Cropped.jpg">
+						</div>
+					</div>
+				</div>
+
+				<div class="sectionContainer" style="display: flex; flex-direction: column; justify-content: center; width: 100%; background: #4fc3f7;">
+					<div class="sectionSubContainer">
+						<p style="font-weight: 700; font-size: 1.3rem; text-align: center; display: block; color: #fff; margin: 0 auto;width: 100%; font-family: 'Dosis', sans-serif;">
+							"I once cried because I had no shoes to play soccer, but one day,
+							 I met a man who had no feet."
+							<br><br>
+							<span style="font-weight: 300;">Zinedine Zidane</span>
+						</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="contactContainer" class="contactContainer" style="overflow: auto; width: auto; position: relative; text-align: center; height: 100vh; background: #222222; display: flex; flex-direction: column; justify-content: center;">
+			<div class="sectionSubContainer">
+				<!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #616161; text-align: center;">C0NTACT</p-->
+				<p id="sectionSubtitleDoodles" class="sectionSubtitle unscrolled" style="color: #fff;">Get in touch.</p>
+
+				<div style="height: 6vh;"></div>
+
+				<div style="clear: both; display: inline-block; margin: 0 auto; color: #fff;">
+					<a class="contactLink"><img src="images/gmailIcon.png" style="height: auto; width: 128px; "></a>
+					<a class="contactLink"><img src="images/linkedinIcon.png" style="height: auto; width: 128px; background: #fff; border-radius: 12px;"></a>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+	<script>
+
+	/*
+	 * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
+	 *
+	 * Uses the built in easing capabilities added In jQuery 1.1
+	 * to offer multiple easing options
+	 *
+	 * TERMS OF USE - jQuery Easing
+	 * 
+	 * Open source under the BSD License. 
+	 * 
+	 * Copyright Â© 2008 George McGinley Smith
+	 * All rights reserved.
+	 * 
+	 * Redistribution and use in source and binary forms, with or without modification, 
+	 * are permitted provided that the following conditions are met:
+	 * 
+	 * Redistributions of source code must retain the above copyright notice, this list of 
+	 * conditions and the following disclaimer.
+	 * Redistributions in binary form must reproduce the above copyright notice, this list 
+	 * of conditions and the following disclaimer in the documentation and/or other materials 
+	 * provided with the distribution.
+	 * 
+	 * Neither the name of the author nor the names of contributors may be used to endorse 
+	 * or promote products derived from this software without specific prior written permission.
+	 * 
+	 * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
+	 * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+	 * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+	 *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+	 *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+	 *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED 
+	 * AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+	 *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
+	 * OF THE POSSIBILITY OF SUCH DAMAGE. 
+	 *
+	*/
+
+	// t: current time, b: begInnIng value, c: change In value, d: duration
+	jQuery.easing['jswing'] = jQuery.easing['swing'];
+
+	jQuery.extend( jQuery.easing,
+	{
+		def: 'easeOutQuad',
+		swing: function (x, t, b, c, d) {
+			//alert(jQuery.easing.default);
+			return jQuery.easing[jQuery.easing.def](x, t, b, c, d);
+		},
+		easeInQuad: function (x, t, b, c, d) {
+			return c*(t/=d)*t + b;
+		},
+		easeOutQuad: function (x, t, b, c, d) {
+			return -c *(t/=d)*(t-2) + b;
+		},
+		easeInOutQuad: function (x, t, b, c, d) {
+			if ((t/=d/2) < 1) return c/2*t*t + b;
+			return -c/2 * ((--t)*(t-2) - 1) + b;
+		},
+		easeInCubic: function (x, t, b, c, d) {
+			return c*(t/=d)*t*t + b;
+		},
+		easeOutCubic: function (x, t, b, c, d) {
+			return c*((t=t/d-1)*t*t + 1) + b;
+		},
+		easeInOutCubic: function (x, t, b, c, d) {
+			if ((t/=d/2) < 1) return c/2*t*t*t + b;
+			return c/2*((t-=2)*t*t + 2) + b;
+		},
+		easeInQuart: function (x, t, b, c, d) {
+			return c*(t/=d)*t*t*t + b;
+		},
+		easeOutQuart: function (x, t, b, c, d) {
+			return -c * ((t=t/d-1)*t*t*t - 1) + b;
+		},
+		easeInOutQuart: function (x, t, b, c, d) {
+			if ((t/=d/2) < 1) return c/2*t*t*t*t + b;
+			return -c/2 * ((t-=2)*t*t*t - 2) + b;
+		},
+		easeInQuint: function (x, t, b, c, d) {
+			return c*(t/=d)*t*t*t*t + b;
+		},
+		easeOutQuint: function (x, t, b, c, d) {
+			return c*((t=t/d-1)*t*t*t*t + 1) + b;
+		},
+		easeInOutQuint: function (x, t, b, c, d) {
+			if ((t/=d/2) < 1) return c/2*t*t*t*t*t + b;
+			return c/2*((t-=2)*t*t*t*t + 2) + b;
+		},
+		easeInSine: function (x, t, b, c, d) {
+			return -c * Math.cos(t/d * (Math.PI/2)) + c + b;
+		},
+		easeOutSine: function (x, t, b, c, d) {
+			return c * Math.sin(t/d * (Math.PI/2)) + b;
+		},
+		easeInOutSine: function (x, t, b, c, d) {
+			return -c/2 * (Math.cos(Math.PI*t/d) - 1) + b;
+		},
+		easeInExpo: function (x, t, b, c, d) {
+			return (t==0) ? b : c * Math.pow(2, 10 * (t/d - 1)) + b;
+		},
+		easeOutExpo: function (x, t, b, c, d) {
+			return (t==d) ? b+c : c * (-Math.pow(2, -10 * t/d) + 1) + b;
+		},
+		easeInOutExpo: function (x, t, b, c, d) {
+			if (t==0) return b;
+			if (t==d) return b+c;
+			if ((t/=d/2) < 1) return c/2 * Math.pow(2, 10 * (t - 1)) + b;
+			return c/2 * (-Math.pow(2, -10 * --t) + 2) + b;
+		},
+		easeInCirc: function (x, t, b, c, d) {
+			return -c * (Math.sqrt(1 - (t/=d)*t) - 1) + b;
+		},
+		easeOutCirc: function (x, t, b, c, d) {
+			return c * Math.sqrt(1 - (t=t/d-1)*t) + b;
+		},
+		easeInOutCirc: function (x, t, b, c, d) {
+			if ((t/=d/2) < 1) return -c/2 * (Math.sqrt(1 - t*t) - 1) + b;
+			return c/2 * (Math.sqrt(1 - (t-=2)*t) + 1) + b;
+		},
+		easeInElastic: function (x, t, b, c, d) {
+			var s=1.70158;var p=0;var a=c;
+			if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
+			if (a < Math.abs(c)) { a=c; var s=p/4; }
+			else var s = p/(2*Math.PI) * Math.asin (c/a);
+			return -(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
+		},
+		easeOutElastic: function (x, t, b, c, d) {
+			var s=1.70158;var p=0;var a=c;
+			if (t==0) return b;  if ((t/=d)==1) return b+c;  if (!p) p=d*.3;
+			if (a < Math.abs(c)) { a=c; var s=p/4; }
+			else var s = p/(2*Math.PI) * Math.asin (c/a);
+			return a*Math.pow(2,-10*t) * Math.sin( (t*d-s)*(2*Math.PI)/p ) + c + b;
+		},
+		easeInOutElastic: function (x, t, b, c, d) {
+			var s=1.70158;var p=0;var a=c;
+			if (t==0) return b;  if ((t/=d/2)==2) return b+c;  if (!p) p=d*(.3*1.5);
+			if (a < Math.abs(c)) { a=c; var s=p/4; }
+			else var s = p/(2*Math.PI) * Math.asin (c/a);
+			if (t < 1) return -.5*(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
+			return a*Math.pow(2,-10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )*.5 + c + b;
+		},
+		easeInBack: function (x, t, b, c, d, s) {
+			if (s == undefined) s = 1.70158;
+			return c*(t/=d)*t*((s+1)*t - s) + b;
+		},
+		easeOutBack: function (x, t, b, c, d, s) {
+			if (s == undefined) s = 1.70158;
+			return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
+		},
+		easeInOutBack: function (x, t, b, c, d, s) {
+			if (s == undefined) s = 1.70158; 
+			if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
+			return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
+		},
+		easeInBounce: function (x, t, b, c, d) {
+			return c - jQuery.easing.easeOutBounce (x, d-t, 0, c, d) + b;
+		},
+		easeOutBounce: function (x, t, b, c, d) {
+			if ((t/=d) < (1/2.75)) {
+				return c*(7.5625*t*t) + b;
+			} else if (t < (2/2.75)) {
+				return c*(7.5625*(t-=(1.5/2.75))*t + .75) + b;
+			} else if (t < (2.5/2.75)) {
+				return c*(7.5625*(t-=(2.25/2.75))*t + .9375) + b;
+			} else {
+				return c*(7.5625*(t-=(2.625/2.75))*t + .984375) + b;
+			}
+		},
+		easeInOutBounce: function (x, t, b, c, d) {
+			if (t < d/2) return jQuery.easing.easeInBounce (x, t*2, 0, c, d) * .5 + b;
+			return jQuery.easing.easeOutBounce (x, t*2-d, 0, c, d) * .5 + c*.5 + b;
+		}
+	});
+
+	/*
+	 *
+	 * TERMS OF USE - EASING EQUATIONS
+	 * 
+	 * Open source under the BSD License. 
+	 * 
+	 * Copyright Â© 2001 Robert Penner
+	 * All rights reserved.
+	 * 
+	 * Redistribution and use in source and binary forms, with or without modification, 
+	 * are permitted provided that the following conditions are met:
+	 * 
+	 * Redistributions of source code must retain the above copyright notice, this list of 
+	 * conditions and the following disclaimer.
+	 * Redistributions in binary form must reproduce the above copyright notice, this list 
+	 * of conditions and the following disclaimer in the documentation and/or other materials 
+	 * provided with the distribution.
+	 * 
+	 * Neither the name of the author nor the names of contributors may be used to endorse 
+	 * or promote products derived from this software without specific prior written permission.
+	 * 
+	 * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
+	 * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+	 * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+	 *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+	 *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+	 *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED 
+	 * AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+	 *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
+	 * OF THE POSSIBILITY OF SUCH DAMAGE. 
+	 *
+	 */
+
+	/*==========================================================================*/
+	/* -GENERAL START */
+	/*==========================================================================*/
+
+		$(window).ready(function() { 
+
+			$('.mikeImage').addClass('active');
+			setTimeout(function() {
+				$('#homeLinkMike').addClass('active');
+			}, 150);
+			setTimeout(function() {
+				$('#homeLinkProjects').addClass('active');
+			}, 300);
+			setTimeout(function() {
+				$('#homeLinkDoodles').addClass('active');
+			}, 450);
+			setTimeout(function() {
+				$('#homeLinkPhotos').addClass('active');
+			}, 600);
+			setTimeout(function() {
+				$('#homeLinkContact').addClass('active');
+			}, 750);
+
+		});
+
+		var unscrolled = [
+			document.getElementById('experienceJavaScript'),
+			document.getElementById('experienceHTMLCSS'),
+			document.getElementById('experienceJava'),
+			document.getElementById('experienceSQL'),
+			document.getElementById('experiencePHP'),
+			document.getElementById('experiencePython'),
+			document.getElementById('experiencePhotoshop'),
+			document.getElementById('experienceC'),
+			document.getElementById('experienceSwiftXcode'),
+	     	];
+
+	    $(document).on('scroll', function() {
+	    	if (($('#homeContainer').height()) > $(window).scrollTop()) {
+	        	$('#navContainer').removeClass('active');
+	        } else {
+	        	$('#navContainer').addClass('active');
+	        }
+	    });
+
+	    var experienceBarScrolled = false;
+
+		$(document).on('scroll', function() {
+
+			if (!experienceBarScrolled) {
+		        for (i in unscrolled) {
+		          if (($(unscrolled[i]).offset().top + $(unscrolled[i]).height()) <= $(window).height() + $(window).scrollTop()) {
+		            $(unscrolled[i]).removeClass('unscrolled');
+		            if (unscrolled[i] == document.getElementById('experienceSwiftXcode')) {
+		            	experienceBarScrolled = true;
+		            }
+		          }
+		        }
+
+			}
+
+	      });
+
+
+
+	/*==========================================================================*/
+	/* -GENERAL END */
+	/*==========================================================================*/
+
+	/*==========================================================================*/
+	/* -HOME START */
+	/*==========================================================================*/
+
+		document.getElementById('homeLinkMike').addEventListener('mouseover', function(e) { $('#homeIconMike').addClass('homeIconOn'); });
+		document.getElementById('homeLinkMike').addEventListener('mouseout', function(e) { $('#homeIconMike').removeClass('homeIconOn'); });
+
+		document.getElementById('homeLinkProjects').addEventListener('mouseover', function(e) { $('#homeIconProjects').addClass('homeIconOn'); });
+		document.getElementById('homeLinkProjects').addEventListener('mouseout', function(e) { $('#homeIconProjects').removeClass('homeIconOn'); });
+
+		document.getElementById('homeLinkDoodles').addEventListener('mouseover', function(e) { $('#homeIconDoodles').addClass('homeIconOn'); });
+		document.getElementById('homeLinkDoodles').addEventListener('mouseout', function(e) { $('#homeIconDoodles').removeClass('homeIconOn'); });
+
+		document.getElementById('homeLinkMike').addEventListener('click', function(e) { scrollTo(document.getElementById('mikeContainer')); });
+
+		document.getElementById('navItem1').addEventListener('click', function(e) { scrollTo(document.getElementById('mikeContainer')); });
+
+		document.getElementById('homeLinkProjects').addEventListener('click', function(e) { scrollTo(document.getElementById('projectsContainer')); });
+
+		document.getElementById('navItem2').addEventListener('click', function(e) { scrollTo(document.getElementById('projectsContainer')); });
+
+		document.getElementById('homeLinkDoodles').addEventListener('click', function(e) { scrollTo(document.getElementById('doodlesContainer')); });
+
+		document.getElementById('navItem3').addEventListener('click', function(e) { scrollTo(document.getElementById('doodlesContainer')); });
+
+		document.getElementById('homeLinkPhotos').addEventListener('click', function(e) { scrollTo(document.getElementById('photosContainer')); });
+
+		document.getElementById('homeLinkContact').addEventListener('click', function(e) { scrollTo(document.getElementById('contactContainer')); });
+
+		document.getElementById('navItem4').addEventListener('click', function(e) { scrollTo(document.getElementById('photosContainer')); });
+
+		document.getElementById('navItem5').addEventListener('click', function(e) { scrollTo(document.getElementById('contactContainer')); });
+
+		function scrollTo(e) {
+			$('html, body').animate({ scrollTop: $(e).offset().top }, 500, 'easeInOutExpo');
+			//$('body').addClass('bodyInvis');
+			//setTimeout(function() {
+			//	$('body').removeClass('bodyInvis');
+			//}, 500);
+        }
+
+		/*
+		document.getElementById('homeLinkMail').addEventListener('mouseover', function(e) { $('#homeIconMail').addClass('homeIconOn'); });
+		document.getElementById('homeLinkMail').addEventListener('mouseout', function(e) { $('#homeIconMail').removeClass('homeIconOn'); });
+
+		document.getElementById('homeLinkLinkedin').addEventListener('mouseover', function(e) { $('#homeIconLinkedin').addClass('homeIconOn'); });
+		document.getElementById('homeLinkLinkedin').addEventListener('mouseout', function(e) { $('#homeIconLinkedin').removeClass('homeIconOn'); });
+		*/
+
+	/*==========================================================================*/
+	/* -HOME END */
+	/*==========================================================================*/
+
+	/*==========================================================================*/
+	/* -TTT START */
+	/*==========================================================================*/
+
+		var boxElements = document.getElementsByClassName("TTTSpot");
+		var currentBoard = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+		var bestMove;
+
+		document.getElementById('TTTrenew').addEventListener('click', function() {
+				TTTrestart();
+			}, false);
+
+		for (i = 0; i < boxElements.length; i++) {
+			boxElements[i].addEventListener('click', function() {
+				TTTplayerSelectBox(this);
+			}, false);
+		}
+
+		function indexOfMax2D(arr) {
+		    if (arr.length === 0) {
+		        return -1;
+		    }
+		    var max = arr[0];
+		    var maxIndex = 0;
+
+		    for (var i = 1; i < arr.length; i++) {
+		        if (arr[i][0] > max) {
+		            maxIndex = i;
+		            max = arr[i];
+		        }
+		    }
+		    return maxIndex;
+		}
+
+		function indexOfMin2D(arr) {
+		    if (arr.length === 0) {
+		        return -1;
+		    }
+		    var min = arr[0];
+		    var minIndex = 0;
+
+		    for (var i = 1; i < arr.length; i++) {
+		        if (arr[i][0] < min) {
+		            minIndex = i;
+		            min = arr[i];
+		        }
+		    }
+		    return minIndex;
+		}
+
+		function TTTplayerSelectBox(e) {
+			if (!$(e).hasClass("TTTSpotSelected")) {
+				e.firstElementChild.innerHTML = "close";
+				e.className += " TTTSpotSelected";
+				currentBoard[parseInt(e.getAttribute("data-spot"))] = -1;
+				if (TTTcheckBoard(currentBoard) == "N/A") {
+					var x = document.getElementById("b" + TTTminimax(currentBoard));
+					TTTcomputerSelectBox(x);
+				} else {
+					TTTfindWin(currentBoard);
+				}
+			}
+		}
+
+		function TTTcomputerSelectBox(e) {
+			e.firstElementChild.innerHTML = "panorama_fish_eye";
+			e.className += " TTTSpotSelected";
+			currentBoard[parseInt(e.getAttribute("data-spot"))] = 1;
+			TTTcheckBoard(currentBoard);
+			if (TTTcheckBoard(currentBoard) != "N/A") {
+				TTTfindWin(currentBoard);
+			}
+		}
+
+		function TTTrestart() {
+
+			for (i = 0; i < 9; i++) {
+				document.getElementById('b' + i).className = "TTTSpot";
+				document.getElementById('b' + i).innerHTML = '<i class="material-icons TTTIcon"></i>';
+			}
+
+			currentBoard = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+			$('#TTTgameOver').removeClass('active');
+
+		}
+
+		function TTTfindWin(board) {
+			console.log('okay!');
+			var winningBoards = [
+								[0, 1, 2],
+								[3, 4, 5],
+								[6, 7, 8],
+								[0, 3, 6],
+								[1, 4, 7],
+								[2, 5, 8],
+								[0, 4, 8],
+								[2, 4, 6],
+								];
+
+			for (i = 0; i < 9; i++) {
+				$('#b' + i).addClass('TTTSpotSelected');
+				console.log('#' + i);
+			}
+
+			setTimeout(function() {
+
+				for (i = 0; i < winningBoards.length; i++) {
+
+					if (board[winningBoards[i][0]] + board[winningBoards[i][1]] + board[winningBoards[i][2]] == 3) {
+						document.getElementById('TTTgameOverText').innerHTML = "You Lose!";
+						$('#TTTgameOver').addClass('active');
+						// Computer wins
+						for (j = 0; j < 3; j ++) {
+							$('#b' + winningBoards[i][j]).addClass('TTTComputerWinSpot');
+							console.log('#b' + winningBoards[i][j]);
+						}
+						return;
+					} else if (board[winningBoards[i][0]] + board[winningBoards[i][1]] + board[winningBoards[i][2]] == -3) {
+						document.getElementById('TTTgameOverText').innerHTML = "You Won?";
+						$('#TTTgameOver').addClass('active');
+						// Player wins
+						for (j = 0; j < 3; j ++) {
+							$('#b' + winningBoards[i][j]).addClass('TTTPlayerWinSpot');
+							console.log('#b' + winningBoards[i][j]);
+						}
+						return;
+					}
+				}
+
+				document.getElementById('TTTgameOverText').innerHTML = "Tie game!";
+				$('#TTTgameOver').addClass('active');
+
+				for (i = 0; i < 9; i++) {
+					$('#b' + i).addClass('TTTTieSpot');
+					console.log('#' + i);
+				}
+
+			}, 500);
+
+		}
+
+		function TTTcheckBoard(board) {
+			if (
+				board[0] + board[1] + board[2] == -3 || board[3] + board[4] + board[5] == -3 || 
+				board[6] + board[7] + board[8] == -3 || board[0] + board[3] + board[6] == -3 || 
+				board[1] + board[4] + board[7] == -3 || board[2] + board[5] + board[8] == -3 ||
+				board[0] + board[4] + board[8] == -3 || board[2] + board[4] + board[6] == -3) {
+				// player wins
+				return "player";
+			} else if (
+				board[0] + board[1] + board[2] == 3 || board[3] + board[4] + board[5] == 3 || 
+				board[6] + board[7] + board[8] == 3 || board[0] + board[3] + board[6] == 3 || 
+				board[1] + board[4] + board[7] == 3 || board[2] + board[5] + board[8] == 3 ||
+				board[0] + board[4] + board[8] == 3 || board[2] + board[4] + board[6] == 3) {
+				// computer wins
+				return "computer";
+			} else if (TTTavailableMoves(board).length == 0) {
+				// tie game
+				return "full";
+			} else {
+				return "N/A";
+			}
+		}
+
+		function TTTavailableMoves(board) {
+			var moves = [];
+			for (i = 0; i < 9; i++) {
+				if (board[i] == 0) {
+					moves.push(i);
+				}
+			}
+			return moves;
+		}
+
+		function TTTminimax(board) {
+			max(board, 0);
+			return bestMove;
+		}
+
+		function max(board, depth) {
+			var result = [];
+			var status = TTTcheckBoard(board);
+			if (status == "player") {
+				return -10 + depth;
+			} else if (status == "computer") {
+				return 10 - depth;
+			} else if (status == "full") {
+				return 0;
+			} else {
+				var moves = TTTavailableMoves(board);
+				var max = -1000;
+				var move = -1;
+				for (i in moves) {
+					var temp = i;
+					board[moves[i]] = 1;
+					var x = min(board, depth + 1);
+					if (x > max) {
+						max = x;
+						move = moves[temp];
+					}
+					i = temp;
+					board[moves[i]] = 0;
+				}
+				bestMove = move;
+				return max;
+			}
+		}
+
+		function min(board, depth) {
+			var status = TTTcheckBoard(board);
+			if (status == "player") {
+				return -10 + depth;
+			} else if (status == "computer") {
+				return 10 - depth;
+			} else if (status == "full") {
+				return 0;
+			} else {
+				var moves = TTTavailableMoves(board);
+				var min = 1000;
+				var move = -1;
+				for (i in moves) {
+					var temp = i;
+					board[moves[i]] = -1;
+					var x = max(board, depth + 1);
+					if (x < min) {
+						min = x;
+						move = moves[temp];
+					}
+					i = temp;
+					board[moves[i]] = 0;
+				}
+				bestMove = move;
+				return min;
+			}
+		}
+
+	/*==========================================================================*/
+	/* -TTT END */
+	/*==========================================================================*/
+
+	</script>
 </html>
