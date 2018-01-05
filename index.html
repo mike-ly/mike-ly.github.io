@@ -8,12 +8,12 @@
 		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-		<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
-		<script src="jquery-3.2.1.min.js"></script>
+		<link href="{{ baseurl }}/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+		<script src="{{ baseurl }}/jquery-3.2.1.min.js"></script>
 	</head>
 	<body class="">
 		<div id="homeContainer" class="homeContainer">
-			<!--img id="homeIconMike" class="homeIcon" src="MikeProfile.jpg" style="height: 50vh; width: 50vh; border-radius: 50%;">
+			<!--img id="homeIconMike" class="homeIcon" src="{{ baseurl }}/MikeProfile.jpg" style="height: 50vh; width: 50vh; border-radius: 50%;">
 			<i id="homeIconProjects"  class="material-icons homeIcon" style="height: 50vh; width: 50vh; font-size: 50vh;">build</i>
 			<i id="homeIconDoodles"  class="material-icons homeIcon" style="width: 60vh; height: 60vh; font-size: 60vh;">gesture</i>
 			<!--a id="homeIconMail" class="mdi mdi-email homeIcon" style="height: 60vh; width: 60vh; font-size: 60vh;"></a>
@@ -30,7 +30,7 @@
 				</p>
 			</div>
 			<div style="grid-area: h2;">
-				<img class="mikeImage" src="MikeProfile.jpg">
+				<img class="mikeImage" src="{{ baseurl }}/MikeProfile.jpg">
 			</div>
 			<!--a id="homeLinkMail" class="mdi mdi-email homeContactMeLink" style="position: relative; z-index: 2;"></a>
 			<div class="homeContactMe">
@@ -181,7 +181,7 @@
 							<div class="z-depth-1 projectsSubGrid" style="grid-area: card2;">
 								<div class="projectCard" target="_blank" style="grid-area: card;">
 									<div class="projectCardCover" style="background: #002878;">
-										<img src="duckArt.png" style="height: auto; width: 50%; margin: 0 auto; object-fit: ;">
+										<img src="{{ baseurl }}/duckArt.png" style="height: auto; width: 50%; margin: 0 auto; object-fit: ;">
 									</div>
 								</div>
 								<div style="grid-area: description; display: flex; flex-direction: column; justify-content: center;">
@@ -200,7 +200,7 @@
 							<div class="z-depth-1 projectsSubGrid" style="grid-area: card3;">
 								<div class="projectCard" target="_blank" style="grid-area: card;">
 									<div class="projectCardCover" style="background: #fff;">
-										<img src="websiteIMG4.png" style="height: 100%; width: 100%; object-fit: cover;">
+										<img src="{{ baseurl }}/websiteIMG4.png" style="height: 100%; width: 100%; object-fit: cover;">
 									</div>
 								</div>
 								<div style="grid-area: description; display: flex; flex-direction: column; justify-content: center;">
@@ -283,31 +283,31 @@
 					<div style="height: 8vh;"></div>
 					<div class="photosGrid">
 						<div style="grid-area: p1;">
-							<img class="z-depth-3 photosPhoto" src="images/image1Cropped.jpg">
+							<img class="z-depth-3 photosPhoto" src="{{ baseurl }}/images/image1Cropped.jpg">
 						</div>
 						<div style="grid-area: p2;">
-							<img class="z-depth-3 photosPhoto" src="images/image2Cropped.jpg">
+							<img class="z-depth-3 photosPhoto" src="{{ baseurl }}/images/image2Cropped.jpg">
 						</div>
 						<div style="grid-area: p3;">
-							<img class="z-depth-3 photosPhoto" src="images/image3Cropped.jpg">
+							<img class="z-depth-3 photosPhoto" src="{{ baseurl }}/images/image3Cropped.jpg">
 						</div>
 						<div style="grid-area: p4;">
-							<img class="z-depth-3 photosPhoto" src="images/image4Cropped.jpg">
+							<img class="z-depth-3 photosPhoto" src="{{ baseurl }}/images/image4Cropped.jpg">
 						</div>
 						<div style="grid-area: p5;">
-							<img class="z-depth-3 photosPhoto" src="images/image5Cropped.jpg">
+							<img class="z-depth-3 photosPhoto" src="{{ baseurl }}/images/image5Cropped.jpg">
 						</div>
 						<div style="grid-area: p6;">
-							<img class="z-depth-3 photosPhoto" src="images/image6Cropped.jpg">
+							<img class="z-depth-3 photosPhoto" src="{{ baseurl }}/images/image6Cropped.jpg">
 						</div>
 						<div style="grid-area: p7;">
-							<img class="z-depth-3 photosPhoto" src="images/image7Cropped.jpg">
+							<img class="z-depth-3 photosPhoto" src="{{ baseurl }}/images/image7Cropped.jpg">
 						</div>
 						<div style="grid-area: p8;">
-							<img class="z-depth-3 photosPhoto" src="images/image8Cropped.jpg">
+							<img class="z-depth-3 photosPhoto" src="{{ baseurl }}/images/image8Cropped.jpg">
 						</div>
 						<div style="grid-area: p9;">
-							<img class="z-depth-3 photosPhoto" src="images/image9Cropped.jpg">
+							<img class="z-depth-3 photosPhoto" src="{{ baseurl }}/images/image9Cropped.jpg">
 						</div>
 					</div>
 				</div>
@@ -334,8 +334,8 @@
 				<div style="height: 6vh;"></div>
 
 				<div style="clear: both; display: inline-block; margin: 0 auto; color: #fff;">
-					<a class="contactLink"><img src="images/gmailIcon.png" style="height: auto; width: 128px; "></a>
-					<a class="contactLink"><img src="images/linkedinIcon.png" style="height: auto; width: 128px; background: #fff; border-radius: 12px;"></a>
+					<a class="contactLink"><img src="{{ baseurl }}/images/gmailIcon.png" style="height: auto; width: 128px; "></a>
+					<a class="contactLink"><img src="{{ baseurl }}/images/linkedinIcon.png" style="height: auto; width: 128px; background: #fff; border-radius: 12px;"></a>
 				</div>
 			</div>
 		</div>
