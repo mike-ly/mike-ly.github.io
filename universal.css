@@ -236,6 +236,14 @@ a:hover {
 				visibility 1s ease-in-out 0.4s;
 }
 
+@media screen and (min-width: 601px) {
+
+	.mikeImage {
+		width: 100%;
+	}
+
+}
+
 @media screen and (max-width: 601px) {
 
 	.navContainer {
@@ -332,7 +340,6 @@ a:hover {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	width: 100%;
 	transform: translate(-50%, -50%);
 	object-fit: cover;
 	filter: grayscale(0) opacity(1);
@@ -455,10 +462,6 @@ a:hover {
 			[row1-start] "c1" auto [row1-end]
 			[row2-start] "c2" 1fr [row2-end]
 			/100%;
-	}
-
-	.mikeImage {
-		display: block;
 	}
 
 }
