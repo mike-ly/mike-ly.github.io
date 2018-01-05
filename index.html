@@ -18,20 +18,18 @@
 			<i id="homeIconDoodles"  class="material-icons homeIcon" style="width: 60vh; height: 60vh; font-size: 60vh;">gesture</i>
 			<!--a id="homeIconMail" class="mdi mdi-email homeIcon" style="height: 60vh; width: 60vh; font-size: 60vh;"></a>
 			<a id="homeIconLinkedin" class="mdi mdi-linkedin-box homeIcon" style="height: 60vh; width: 60vh; font-size: 60vh;"></a-->
-			<div style="grid-area: h1; display: flex; flex-direction: column; justify-content: center; background: #222222;">
+			<div style="display: flex; flex-direction: column; justify-content: center;">
 				<p class="homeLinks">
-					<span style="font-weight: 800; font-size: 6rem; letter-spacing: 0; font-family: 'Dosis', sans-serif;" onclick="scrollTo();">M<span style="color: #4fc3f7;">i</span>KE</span><br>
+					<span style="font-weight: 800; font-size: 6rem; letter-spacing: 0; font-family: 'Dosis', sans-serif;" onclick="scrollTo();"><span style="opacity: 0.5">M</span><span style="color: #4fc3f7;">i</span><span style="opacity: 0.5">KE</span></span><!--br>
 					<br>
 					<a id="homeLinkMike" class="homeLink" style="font-weight: 100;" onclick="scrollTo();">&nbsp;&nbsp;INTR0</a><br>
 					<a id="homeLinkProjects" class="homeLink" style="font-weight: 100;" onclick="scrollTo();">&nbsp;&nbsp;PR0JECTS</a><br>
 					<a id="homeLinkDoodles" class="homeLink" style="font-weight: 100;" onclick="scrollTo();">&nbsp;&nbsp;D00DLES</a><br>
 					<a id="homeLinkPhotos" class="homeLink" style="font-weight: 100;" onclick="scrollTo();">&nbsp;&nbsp;PH0T0S</a><br>
-					<a id="homeLinkContact" class="homeLink" style="font-weight: 100;" onclick="scrollTo();">&nbsp;&nbsp;C0NTACT</a>
+					<a id="homeLinkContact" class="homeLink" style="font-weight: 100;" onclick="scrollTo();">&nbsp;&nbsp;C0NTACT</a-->
 				</p>
 			</div>
-			<div style="grid-area: h2;">
-				<img class="mikeImage" src="images/mikeMainCropped.JPG">
-			</div>
+			<img class="mikeImage" src="images/mikeMainCropped.JPG">
 			<!--a id="homeLinkMail" class="mdi mdi-email homeContactMeLink" style="position: relative; z-index: 2;"></a>
 			<div class="homeContactMe">
 				<a id="homeLinkMail" class="mdi mdi-email homeContactMeLink"></a>
@@ -39,14 +37,14 @@
 			</div-->
 		</div>
 
-		<div id="navContainer" style="height: 51px; width: 100%; position: relative; position: fixed; top: 0; z-index: 2;">
+		<div id="navContainer" class="navContainer" style="height: 51px; width: 100%; position: relative; position: fixed; top: 0; z-index: 2;">
 			<div style="height: 50px; padding: 0 5%; width: 100%; font-weight: 300;">
 				<div style="width: 100%; margin: 0 auto;">
 					<a class="z-depth-1 resumeButton" href="mikeResume.pdf" target="_blank" style="display: none;">DOWNLOAD RESUME</a>
 					<a id="navItem5" class="navItem">C0NTACT</a>
-					<a id="navItem4" class="navItem">PH0T0S</a>
-					<a id="navItem3" class="navItem">D00DLES</a>
-					<a id="navItem2" class="navItem">PR0JECTS</a>
+					<a id="navItem4" class="navItem">PH0TOS</a>
+					<a id="navItem3" class="navItem">THINGS</a>
+					<a id="navItem2" class="navItem">W0RK</a>
 					<a id="navItem1" class="navItem">INTR0</a>
 				</div>
 			</div>
@@ -556,22 +554,24 @@
 
 		$(window).ready(function() { 
 
-			$('.mikeImage').addClass('active');
+			setTimeout(function() {
+				$('.mikeImage').addClass('active');
+			}, 0);
 			setTimeout(function() {
 				$('#homeLinkMike').addClass('active');
-			}, 150);
+			}, 700);
 			setTimeout(function() {
 				$('#homeLinkProjects').addClass('active');
-			}, 300);
+			}, 800);
 			setTimeout(function() {
 				$('#homeLinkDoodles').addClass('active');
-			}, 450);
+			}, 900);
 			setTimeout(function() {
 				$('#homeLinkPhotos').addClass('active');
-			}, 600);
+			}, 1000);
 			setTimeout(function() {
 				$('#homeLinkContact').addClass('active');
-			}, 750);
+			}, 1100);
 
 		});
 
@@ -623,30 +623,30 @@
 	/* -HOME START */
 	/*==========================================================================*/
 
-		document.getElementById('homeLinkMike').addEventListener('mouseover', function(e) { $('#homeIconMike').addClass('homeIconOn'); });
-		document.getElementById('homeLinkMike').addEventListener('mouseout', function(e) { $('#homeIconMike').removeClass('homeIconOn'); });
+		// document.getElementById('homeLinkMike').addEventListener('mouseover', function(e) { $('#homeIconMike').addClass('homeIconOn'); });
+		// document.getElementById('homeLinkMike').addEventListener('mouseout', function(e) { $('#homeIconMike').removeClass('homeIconOn'); });
 
-		document.getElementById('homeLinkProjects').addEventListener('mouseover', function(e) { $('#homeIconProjects').addClass('homeIconOn'); });
-		document.getElementById('homeLinkProjects').addEventListener('mouseout', function(e) { $('#homeIconProjects').removeClass('homeIconOn'); });
+		// document.getElementById('homeLinkProjects').addEventListener('mouseover', function(e) { $('#homeIconProjects').addClass('homeIconOn'); });
+		// document.getElementById('homeLinkProjects').addEventListener('mouseout', function(e) { $('#homeIconProjects').removeClass('homeIconOn'); });
 
-		document.getElementById('homeLinkDoodles').addEventListener('mouseover', function(e) { $('#homeIconDoodles').addClass('homeIconOn'); });
-		document.getElementById('homeLinkDoodles').addEventListener('mouseout', function(e) { $('#homeIconDoodles').removeClass('homeIconOn'); });
+		// document.getElementById('homeLinkDoodles').addEventListener('mouseover', function(e) { $('#homeIconDoodles').addClass('homeIconOn'); });
+		// document.getElementById('homeLinkDoodles').addEventListener('mouseout', function(e) { $('#homeIconDoodles').removeClass('homeIconOn'); });
 
-		document.getElementById('homeLinkMike').addEventListener('click', function(e) { scrollTo(document.getElementById('mikeContainer')); });
+		// document.getElementById('homeLinkMike').addEventListener('click', function(e) { scrollTo(document.getElementById('mikeContainer')); });
 
 		document.getElementById('navItem1').addEventListener('click', function(e) { scrollTo(document.getElementById('mikeContainer')); });
 
-		document.getElementById('homeLinkProjects').addEventListener('click', function(e) { scrollTo(document.getElementById('projectsContainer')); });
+		// document.getElementById('homeLinkProjects').addEventListener('click', function(e) { scrollTo(document.getElementById('projectsContainer')); });
 
 		document.getElementById('navItem2').addEventListener('click', function(e) { scrollTo(document.getElementById('projectsContainer')); });
 
-		document.getElementById('homeLinkDoodles').addEventListener('click', function(e) { scrollTo(document.getElementById('doodlesContainer')); });
+		// document.getElementById('homeLinkDoodles').addEventListener('click', function(e) { scrollTo(document.getElementById('doodlesContainer')); });
 
 		document.getElementById('navItem3').addEventListener('click', function(e) { scrollTo(document.getElementById('doodlesContainer')); });
 
-		document.getElementById('homeLinkPhotos').addEventListener('click', function(e) { scrollTo(document.getElementById('photosContainer')); });
+		// document.getElementById('homeLinkPhotos').addEventListener('click', function(e) { scrollTo(document.getElementById('photosContainer')); });
 
-		document.getElementById('homeLinkContact').addEventListener('click', function(e) { scrollTo(document.getElementById('contactContainer')); });
+		// document.getElementById('homeLinkContact').addEventListener('click', function(e) { scrollTo(document.getElementById('contactContainer')); });
 
 		document.getElementById('navItem4').addEventListener('click', function(e) { scrollTo(document.getElementById('photosContainer')); });
 
