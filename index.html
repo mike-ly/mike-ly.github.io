@@ -337,8 +337,8 @@
 				<div style="height: 6vh;"></div>
 
 				<div style="clear: both; display: inline-block; margin: 0 auto; color: #fff; ">
-					<a class="contactLink unscrolled"><img src="images/gmailIcon.png" style="height: auto; width: 128px; "></a>
-					<a class="contactLink unscrolled"><img src="images/linkedinIcon.png" style="height: auto; width: 128px; background: #fff; border-radius: 12px;"></a>
+					<a class="contactLink unscrolled"><img src="images/gmailIcon.png" class="contactIcon" style=" border-radius: 15px;"></a>
+					<a class="contactLink unscrolled"><img src="images/linkedinIcon.png" class="contactIcon" style=" border-radius: 15px;"></a>
 				</div>
 			</div>
 		</div>
@@ -595,23 +595,25 @@
 
 		var unscrolled = document.getElementsByClassName('unscrolled');
 
-	    $(document).on('scroll', function() {
-	    	if (($('#homeContainer').height()) > $(window).scrollTop()) {
-	        	$('#navContainer').removeClass('active');
-	        } else {
-	        	$('#navContainer').addClass('active');
-	        }
-	    });
+	    // $(document).on('scroll', function() {
+	    // 	if (($('#homeContainer').height()) > $(window).scrollTop()) {
+	    //     	$('#navContainer').removeClass('active');
+	    //     } else {
+	    //     	$('#navContainer').addClass('active');
+	    //     }
+	    // });
 
 	    var numScrolled = 0;
 
 		$(document).on('scroll', function() {
 
 			if (numScrolled < unscrolled.length) {
-	          if (($(unscrolled[numScrolled]).offset().top + ($(unscrolled[numScrolled]).height()) / 2) <= $(window).height() + $(window).scrollTop()) {
-	            $(unscrolled[numScrolled]).addClass('scrolled');
-	            numScrolled++;
-	          }
+				for (i = numScrolled; i < unscrolled.length; i++) {
+					if (($(unscrolled[i]).offset().top + ($(unscrolled[i]).height()) / 2) <= $(window).height() + $(window).scrollTop()) {
+					$(unscrolled[i]).addClass('scrolled');
+						numScrolled++;
+					}
+				}
 			}
 
 	     });

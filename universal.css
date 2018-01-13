@@ -853,8 +853,15 @@ a:hover {
 	float: left;
 }
 
-.contactLink:hover {
-	border-bottom: 5px solid #fff;
+.contactIcon {
+	width: auto;
+	height: 128px;
+	background: #fff;
+	transition: box-shadow 0.5s;
+}
+
+.contactIcon:hover {
+	box-shadow: 0px 0px 30px #fff;
 }
 
 /*==========================================================================*/
