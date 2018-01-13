@@ -114,6 +114,19 @@ a:hover {
 	opacity: 0;
 }*/
 
+.unscrolled {
+	transform: translateY(50px);
+	opacity: 0;
+	visibility: hidden;
+	transition: transform 1s, opacity 1s, visibility 1s;
+}
+
+.scrolled {
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
 /*==========================================================================*/
 /* -GENERAL END */
 /*==========================================================================*/
@@ -334,8 +347,8 @@ a:hover {
 	border-radius: 5px;
 	position: relative;
 	opacity: 0;
-	transition: all 1s 0.5s;
-	transform: translateY(20px);
+	transition: all 1s 1.5s;
+	transform: translateY(40px);
 }
 
 .homeLinks.active.gone.return {
@@ -351,8 +364,12 @@ a:hover {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	object-fit: cover;
-	filter: grayscale(0.5) opacity(1);
-	transition: all 3s;
+	filter: grayscale(0.2) opacity(1);
+	transition: all 1s 1.2s;
+}
+
+.mikeImage.active {
+	filter: grayscale(0.5);
 }
 
 .homeLink.active {
@@ -415,7 +432,7 @@ a:hover {
 	width: 50%;
 	height: 100%;
 	background: #fff;
-	transition: all 1s;
+	transition: all 1.5s;
 }
 
 .homeCurtain2 {
@@ -424,7 +441,7 @@ a:hover {
 	width: 50%;
 	height: 100%;
 	background: #fff;
-	transition: all 1s;
+	transition: all 1.5s;
 }
 
 .homeCurtain3 {
@@ -433,7 +450,7 @@ a:hover {
 	height: 50%;
 	width: 100%;
 	background: #fff;
-	transition: all 1s;
+	transition: all 0.5s;
 }
 
 .homeCurtain4 {
@@ -442,7 +459,7 @@ a:hover {
 	height: 50%;
 	width: 100%;
 	background: #fff;
-	transition: all 1s;
+	transition: all 0.5s;
 }
 
 .homeCurtain1.active, .homeCurtain2.active {
@@ -493,10 +510,6 @@ a:hover {
 
 .experienceBarBeginner {
 	width: 40%;
-}
-
-.experienceBar.unscrolled {
-	width: 0;
 }
 
 @media screen and (max-width: 991px) {
