@@ -20,6 +20,13 @@ body {
 	opacity: 0;
 }
 
+::selection {
+  background: #4fc3f7; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #4fc3f7; /* Gecko Browsers */
+}
+
 a, br, .noselect {
 	text-decoration: none;
 	-webkit-touch-callout: none; /* iOS Safari */
@@ -97,7 +104,7 @@ a:hover {
 }
 
 .sectionSubContainer {
-	max-width: 1000px;
+	max-width: 900px;
 	margin: 0 auto;
 }
 
@@ -109,13 +116,8 @@ a:hover {
 	color: #4bd6ac !important;
 }
 
-/*.sectionSubtitle.unscrolled {
-	transform: translateX(16px);
-	opacity: 0;
-}*/
-
 .unscrolled {
-	transform: translateY(50px);
+	transform: translateY(100px);
 	opacity: 0;
 	visibility: hidden;
 	transition: transform 1s, opacity 1s, visibility 1s;
@@ -249,14 +251,6 @@ a:hover {
 				visibility 1s ease-in-out 0.4s;
 }
 
-@media screen and (min-width: 601px) {
-
-	.mikeImage {
-		width: 100%;
-	}
-
-}
-
 @media screen and (max-width: 601px) {
 
 	.navContainer {
@@ -359,13 +353,15 @@ a:hover {
 }
 
 .mikeImage {
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	object-fit: cover;
 	filter: grayscale(0.2) opacity(1);
 	transition: all 1s 1.2s;
+	z-index: 0;
+	width: 100%;
 }
 
 .mikeImage.active {
@@ -432,7 +428,7 @@ a:hover {
 	width: 50%;
 	height: 100%;
 	background: #fff;
-	transition: all 1.5s;
+	transition: all 2s;
 }
 
 .homeCurtain2 {
@@ -441,7 +437,7 @@ a:hover {
 	width: 50%;
 	height: 100%;
 	background: #fff;
-	transition: all 1.5s;
+	transition: all 2s;
 }
 
 .homeCurtain3 {
@@ -450,7 +446,7 @@ a:hover {
 	height: 50%;
 	width: 100%;
 	background: #fff;
-	transition: all 0.5s;
+	transition: all 2s;
 }
 
 .homeCurtain4 {
@@ -459,7 +455,7 @@ a:hover {
 	height: 50%;
 	width: 100%;
 	background: #fff;
-	transition: all 0.5s;
+	transition: all 2s;
 }
 
 .homeCurtain1.active, .homeCurtain2.active {
@@ -468,6 +464,14 @@ a:hover {
 
 .homeCurtain3.active, .homeCurtain4.active {
 	height: 0;
+}
+
+@media screen and (max-width: 601px) {
+
+	.mikeImage {
+		width: auto;
+	}
+
 }
 
 /*==========================================================================*/
@@ -542,19 +546,19 @@ a:hover {
 	width: auto;
 	height: auto;
 	display: grid;
-	grid-gap: 16px;
+	grid-gap: 48px;
 	grid-template:
 		[row1-start] "card1" auto [row1-end]
 		[row2-start] "card2" auto [row2-end]
 		[row3-start] "card3" auto [row3-end]
+		[row3-start] "card4" auto [row3-end]
 		/100%;
 }
 
 .projectsSubGrid {
-	background: #fff;
+	background: transparent;
 	border-radius: 5px;
 	position: relative;
-	padding: 20px;
 	width: auto;
 	height: auto;
 	display: grid;
@@ -571,7 +575,7 @@ a:hover {
 	position: relative;
 	padding: 24px;
 	transition: all 0.5s ease-in-out;
-	border-radius: 5px;
+	border-radius: 32px;
 }
 
 .projectCardCover {
@@ -587,25 +591,33 @@ a:hover {
 	opacity: 1;
 }
 
+.projectCardDescriptionContainer {
+	display: flex;
+	flex-direction: column;
+	padding-top: 16px;
+}
+
 .projectCardDescription {
-	text-align: left;
-	color: #fff;
+	margin: 0;
 	font-size: 1.1rem;
-	position: relative;
-	z-index: 3;
-	font-weight: 100;
-	transform: translateY(-12px);
-	opacity: 0;
-	visibility: hidden;
-	transition: all 0.5s ease-in-out;
+	font-weight: 300;
+	padding-left: 48px;
+	color: #222222;
 }
 
 .projectLink {
 	color: #222222;
+	line-height: 2rem;
+	font-size: 1.5rem;
+	font-weight: 300;
 }
 
-.projectLink:hover {
+.projectLink.active {
 	color: #2196f3;
+}
+
+.projectLink.active:hover {
+	color: #4fc3f7;
 }
 
 /*
@@ -627,20 +639,34 @@ a:hover {
 @media screen and (max-width: 991px) {
 
 	.projectCard {
-		border-radius: 50%;
 		margin: 6vh auto 2vh auto;
 	}
 
 	.projectsGrid {
-		grid-gap: 0;
+		grid-gap: 24px;
 		grid-template:
 			[row1-start] "card1" auto [row1-end]
-			[row2-start] "description1" auto [row2-end]
-			[row3-start] "card2" auto [row3-end]
-			[row4-start] "description2" auto [row4-end]
-			[row5-start] "card3" auto [row5-end]
-			[row6-start] "description3" auto [row6-end]
+			[row2-start] "card2" auto [row2-end]
+			[row3-start] "card3" auto [row3-end]
+			[row4-start] "card4" auto [row4-end]
 			/100%;
+	}
+
+	.projectsSubGrid {
+		background: transparent;
+		border-radius: 5px;
+		position: relative;
+		width: auto;
+		height: auto;
+		display: grid;
+		grid-template:
+			[row1-start] "card" auto [row1-end]
+			[row2-start] "description" auto [row2-end]
+			/100%;
+	}
+
+	.projectCardDescription {
+		padding-left: 0;
 	}
 
 }
@@ -670,6 +696,8 @@ a:hover {
 	height: 300px;
 	margin: 0 auto;
 	display: grid;
+	padding: 24px;
+	border-radius: 16px;
 	grid-gap: 2%;
 	grid-template:  
 		[row1-start] "b0 b1 b2" 32% [row1-end]
@@ -680,7 +708,6 @@ a:hover {
 }
 
 .TTTSpot {
-	justify-self: center;
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -688,11 +715,11 @@ a:hover {
 	flex-direction: column;
 	justify-content: center;
 	transition: all 0.5s;
-	border-radius: 5px;
+	border-radius: 0px;
 }
 
 .TTTSpotSelected {
-	background: transparent !important;
+	background: #fff !important;
 }
 
 .TTTSpot:hover {
@@ -727,26 +754,31 @@ a:hover {
 
 .TTTgameOver {
 	position: absolute;
-	left: 12px;
-	bottom: 12px;
+	left: 16px;
+	bottom: 16px;
 	text-align: center;
-	transition: all 0s ease-in-out;
-	-ms-transition: all 0s ease-in-out; 
-    -webkit-transition: all 0s ease-in-out; 
 	transform: translateY(-16px);
 	-ms-transform: translateY(-16px);
 	-webkit-transform: translateY(-16px);
 	opacity: 0;
 	visibility: hidden;
+	transition: opacity 0.5s, transform 0.5s;
+	-ms-transition: opacity 0.5s, transform 0.5s; 
+    -webkit-transition: opacity 0.5s, transform 0.5s; 
 }
 
 .TTTgameOver.active {
 	transform: translate(0);
 	opacity: 1;
 	visibility: visible;
-	transition: all 0.5s ease-in-out;
-	-ms-transition: all 0.5s ease-in-out; 
-    -webkit-transition: all 0.5s ease-in-out; 
+}
+
+.TTTgameOver .TTTrenew {
+	display: none;
+}
+
+.TTTgameOver.active .TTTrenew {
+	display: block;
 }
 
 .TTTgameOverText {
@@ -769,7 +801,7 @@ a:hover {
 	background: #fff;
 	display: inline-block;
 	float: left;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.5s;
 }
 
 .TTTrenewIcon {
@@ -795,9 +827,10 @@ a:hover {
 		position: relative;
 		display: grid;
 		padding: 0;
+		grid-gap: 32px;
 		grid-template:
-			[row1-start] "c2" 1fr [row1-end]
-			[row2-start] "c1" 300px [row2-end]
+			[row1-start] "c1" 300px [row1-end]
+			[row2-start] "c2" auto [row2-end]
 			/1fr;
 	}
 
@@ -817,10 +850,11 @@ a:hover {
 	padding: 0;
 	grid-gap: 8px;
 	grid-template:
-		[row1-start] "p1 p2 p3" auto [row1-end]
-		[row2-start] "p4 p5 p6" auto [row2-end]
-		[row3-start] "p7 p8 p9" auto [row3-end]
-		/1fr 1fr 1fr;
+		[row1-start] "p1 p2" auto [row1-end]
+		[row2-start] "p3 p4" auto [row2-end]
+		[row3-start] "p5 p6" auto [row3-end]
+		[row4-start] "p7 p8" auto [row4-end]
+		/1fr 1fr;
 }
 
 .photosPhoto {
@@ -828,13 +862,31 @@ a:hover {
 	width: 100%;
 	object-fit: cover;
 	filter: grayscale(0.9);
-	border-radius: 5px;
-	transition: all 0.5s ease-in-out;
 }
 
 .photosPhoto:hover {
 	filter:grayscale(0);
 	cursor: pointer;
+}
+
+@media screen and (max-width: 991px) {
+
+	.photosGrid {
+		display: grid;
+		padding: 0;
+		grid-gap: 8px;
+		grid-template:
+			[row1-start] "p1" auto [row1-end]
+			[row2-start] "p2" auto [row2-end]
+			[row3-start] "p3" auto [row3-end]
+			[row3-start] "p4" auto [row3-end]
+			[row3-start] "p5" auto [row3-end]
+			[row3-start] "p6" auto [row3-end]
+			[row3-start] "p7" auto [row3-end]
+			[row3-start] "p8" auto [row3-end]
+			/1fr;
+	}
+
 }
 
 /*==========================================================================*/
@@ -857,11 +909,11 @@ a:hover {
 	width: auto;
 	height: 128px;
 	background: #fff;
-	transition: box-shadow 0.5s;
+	transition: box-shadow 0.3s;
 }
 
 .contactIcon:hover {
-	box-shadow: 0px 0px 30px #fff;
+	box-shadow: 0px 0px 50px #fff;
 }
 
 /*==========================================================================*/

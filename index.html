@@ -3,10 +3,8 @@
 	<head>
 		<title>Mike</title>
 		<link rel="stylesheet" type="text/css" href="universal.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Leckerli+One" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 		<script src="jquery-3.2.1.min.js"></script>
@@ -18,10 +16,11 @@
 			<i id="homeIconDoodles"  class="material-icons homeIcon" style="width: 60vh; height: 60vh; font-size: 60vh;">gesture</i>
 			<!--a id="homeIconMail" class="mdi mdi-email homeIcon" style="height: 60vh; width: 60vh; font-size: 60vh;"></a>
 			<a id="homeIconLinkedin" class="mdi mdi-linkedin-box homeIcon" style="height: 60vh; width: 60vh; font-size: 60vh;"></a-->
+			<img class="mikeImage" src="images/mikeMainCropped.JPG">
 			<div style="display: flex; flex-direction: column; justify-content: center;">
 				<p id="homeLinks" class="homeLinks">
-					<span style="font-weight: 800; font-size: 6rem; letter-spacing: 0; font-family: 'Dosis', sans-serif; color:" onclick="scrollTo();">
-						<span style="opacity: 1; font-size: 4rem;">HI, I'M</span><br>
+					<span style="font-weight: 800; font-size: 6rem; letter-spacing: 2px; font-family: 'Dosis', sans-serif; color:" onclick="scrollTo();">
+						<span style="opacity: 1; font-size: 3rem;">HI, I'M</span><br>
 						<span style="opacity: 1;">M</span><span style="color: #4fc3f7;">i</span><span style="opacity: 1">KE LY</span>
 					</span><!--br>
 					<br>
@@ -32,7 +31,8 @@
 					<a id="homeLinkContact" class="homeLink" style="font-weight: 100;" onclick="scrollTo();">&nbsp;&nbsp;C0NTACT</a-->
 				</p>
 			</div>
-			<img class="mikeImage" src="images/mikeMainCropped.JPG">
+			<div id="homeCurtain3" class="homeCurtain3"></div>
+			<div id="homeCurtain4" class="homeCurtain4"></div>
 			<div id="homeCurtain1" class="homeCurtain1"></div>
 			<div id="homeCurtain2" class="homeCurtain2"></div>
 			<!--a id="homeLinkMail" class="mdi mdi-email homeContactMeLink" style="position: relative; z-index: 2;"></a>
@@ -56,7 +56,7 @@
 			<div class="navBottom"></div>
 		</div>
 
-		<div style="background: #f5f5f5;">
+		<div style="background: #f5f5f5; z-index: 10; position: relative;">
 
 			<div style="width: 100%; margin: 0 auto;">
 
@@ -65,21 +65,25 @@
 						<!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #e0e0e0; text-align: center;">MiKE</p-->
 						<p id="sectionSubtitleDoodles" class="sectionSubtitle unscrolled">About me.</p>
 
-						<div style="height: 8vh;"></div>
+						<div style="height: 6vh;"></div>
 
-						<p class="unscrolled" style="font-size: 2rem; font-weight: 100; color: #222222; line-height: 4rem; text-align: left; margin: 0; text-align: left;">
-							I'm an <span style="font-size: 2.2rem; font-weight: 300; color: #222222;">Emory University</span> sophomore from Irvine, CA with a passion for <span style="font-size: 2.2rem; font-weight: 300; color: #222222;">software</span> + <span style="font-size: 2.2rem; font-weight: 300; color: #222222;">web development</span>. I currently study <span style="font-size: 2.2rem; font-weight: 300; color: #222222;">Computer Science</span> + <span style="font-size: 2.2rem; font-weight: 300; color: #222222;">Mathematics</span> and am cofounder + lead developer of <span style="font-size: 2.2rem; font-weight: 300; color: #222222;">FetchMi</span>. During my free time I enjoy playing soccer, piano, and photography.
+						<p class="unscrolled" style="font-size: 1.5rem; font-weight: 200; color: #222222; line-height: 3rem; text-align: left; margin: 0; text-align: left;">
+							<span style="font-weight: 600;">I'm an Emory University sophomore with a passion for making things.</span><br> 
+							I study <span style="font-weight: 400;">Computer Science</span> and <span style="font-weight: 400;">Mathematics</span>.<br>
+							I work as cofounder and lead developer of <span style="font-weight: 400;">FetchMi</span>.<br>
+							During my free time, I enjoy <span style="font-weight: 300;">developing apps</span>,  <span style="font-weight: 300;">bouldering</span>, and <span style="font-weight: 300;">bowling</span>.
 						</p>
 
-						<div style="height: 8vh;"></div>
+						<!--div style="height: 8vh;"></div>
 
 						<div>
 							<div class="z-depth-0" style="font-size: 1rem; font-weight: 100; letter-spacing: 1px; margin: 0; padding: 0 10vw; border-radius: 5px;">
-								<p style="font-weight: 300; margin: 0; float: left;">JavaScript</p>
-								<p style="font-weight: 100; margin: 0; float: right;">Comfortable</p>
+
+								<p style="font-weight: 300; margin: 0; float: left;">C</p>
+								<p style="font-weight: 100; margin: 0; float: right;">Beginner</p>
 								<div style="height: 4px; clear: both;"></div>
 								<div class="z-depth-1 unscrolled" style="width: 100%; height: 24px; border-radius: 12px; background: #fff; overflow: hidden; border: 0px solid #2f2f2f;">
-									<div id="experienceJavaScript" class="experienceBar experienceBarComfortable" ></div>
+									<div id="experienceC" class="experienceBar experienceBarBeginner"></div>
 								</div>
 
 								<div style="height: 20px;"></div>
@@ -99,11 +103,27 @@
 								</div>
 
 								<div style="height: 20px;"></div>
+								<p style="font-weight: 300; margin: 0; float: left;">JavaScript</p>
+								<p style="font-weight: 100; margin: 0; float: right;">Comfortable</p>
+								<div style="height: 4px; clear: both;"></div>
+								<div class="z-depth-1 unscrolled" style="width: 100%; height: 24px; border-radius: 12px; background: #fff; overflow: hidden; border: 0px solid #2f2f2f;">
+									<div id="experienceJavaScript" class="experienceBar experienceBarComfortable" ></div>
+								</div>
+
+								<div style="height: 20px;"></div>
 								<p style="font-weight: 300; margin: 0; float: left;">SQL</p>
 								<p style="font-weight: 100; margin: 0; float: right;">Familiar</p>
 								<div style="height: 4px; clear: both;"></div>
 								<div class="z-depth-1 unscrolled" style="width: 100%; height: 24px; border-radius: 12px; background: #fff; overflow: hidden; border: 0px solid #2f2f2f;">
 									<div id="experienceSQL" class="experienceBar experienceBarFamiliar"></div>
+								</div>
+
+								<div style="height: 20px;"></div>
+								<p style="font-weight: 300; margin: 0; float: left;">Photoshop</p>
+								<p style="font-weight: 100; margin: 0; float: right;">Familiar</p>
+								<div style="height: 4px; clear: both;"></div>
+								<div class="z-depth-1 unscrolled" style="width: 100%; height: 24px; border-radius: 12px; background: #fff; overflow: hidden; border: 0px solid #2f2f2f;">
+									<div id="experiencePhotoshop" class="experienceBar experienceBarFamiliar"></div>
 								</div>
 
 								<div style="height: 20px;"></div>
@@ -123,22 +143,6 @@
 								</div>
 
 								<div style="height: 20px;"></div>
-								<p style="font-weight: 300; margin: 0; float: left;">Photoshop</p>
-								<p style="font-weight: 100; margin: 0; float: right;">Familiar</p>
-								<div style="height: 4px; clear: both;"></div>
-								<div class="z-depth-1 unscrolled" style="width: 100%; height: 24px; border-radius: 12px; background: #fff; overflow: hidden; border: 0px solid #2f2f2f;">
-									<div id="experiencePhotoshop" class="experienceBar experienceBarFamiliar"></div>
-								</div>
-
-								<div style="height: 20px;"></div>
-								<p style="font-weight: 300; margin: 0; float: left;">C</p>
-								<p style="font-weight: 100; margin: 0; float: right;">Beginner</p>
-								<div style="height: 4px; clear: both;"></div>
-								<div class="z-depth-1 unscrolled" style="width: 100%; height: 24px; border-radius: 12px; background: #fff; overflow: hidden; border: 0px solid #2f2f2f;">
-									<div id="experienceC" class="experienceBar experienceBarBeginner"></div>
-								</div>
-
-								<div style="height: 20px;"></div>
 								<p style="font-weight: 300; margin: 0; float: left;">Swift/Xcode</p>
 								<p style="font-weight: 100; margin: 0; float: right;">Beginner</p>
 								<div style="height: 4px; clear: both;"></div>
@@ -147,7 +151,7 @@
 								</div>
 
 							</div>
-						</div>
+						</div-->
 					</div>
 				</div>
 
@@ -161,60 +165,66 @@
 
 						<div class="projectsGrid">
 
-							<div class="z-depth-1 projectsSubGrid unscrolled" style="grid-area: card1;">
-								<div class="projectCard" style="grid-area: card;">
+							<div class="projectsSubGrid unscrolled" style="grid-area: card1;">
+								<div class="z-depth-5 projectCard" style="grid-area: card;">
 									<div class="projectCardCover" style="background: #fff;">
-										<p style="font-size: 2.5rem; color: #222222; font-weight: 300; text-align: center;">Fetch<span style="color: #4db6ac;">Mi</span></p>
+										<p style="font-size: 2.5rem; color: #222222; font-weight: 200; text-align: center;">Fetch<span style="color: #4db6ac;">Mi</span></p>
 									</div>
 								</div>
-								<div style="grid-area: description; display: flex; flex-direction: column; justify-content: center;">
-									<p style="margin: 0; font-size: 1.2rem; font-weight: 100; padding-left: 24px;">
-										<a class="projectLink" href="https://fetchmi.com" target="_blank"><span style="font-size: 1.5rem; font-weight: 300;">FetchMi&nbsp;<i class="material-icons" style="color: #2196f3;">open_in_new</i></a></span><br>
-										<span style="font-weight: 300; color: #757575;">A website connecting people to service companies in the Atlanta area.</span><br>
-										<br>
-										<span style="font-weight: 300;">Started:</span>&nbsp; May 2017<br>
-										<span style="font-weight: 300;">Company:</span>&nbsp; Qindian LLC.<br>
-										<span style="font-weight: 300;">Role:</span>&nbsp; Co-founder, Lead Developer<br>
-										<span style="font-weight: 300;">Languages:</span>&nbsp;  JavaScript, HTML/CSS, SQL, PHP<br>
-										<span style="font-weight: 300;">Frameworks:</span>&nbsp; Materialize, CodeIgniter<br>
+								<div class="projectCardDescriptionContainer" style="grid-area: description;">
+									<p class="projectCardDescription">
+										<a class="projectLink active" href="https://fetchmi.com" target="_blank"><span>FetchMi&nbsp;<i class="material-icons" style="color: #2196f3;">open_in_new</i></a></span><br>
+										<span style="line-height: 2rem; font-weight: 500;">Cofounder/Lead Developer, <span style="font-style: italic;">Since January 2017</span></span><br>
+										<span style="font-weight: 500;">Atlanta, GA</span><br><br>
+										<span style="line-height: 1.5rem;">FetchMi brings companies throughout Atlanta onto a single platform. Our goal is to help people learn about and compare services through objective information, reviews, and messaging.</span>
 									</p>
 								</div>
 							</div>
 
-							<div class="z-depth-1 projectsSubGrid unscrolled" style="grid-area: card2;">
-								<div class="projectCard" target="_blank" style="grid-area: card;">
+							<div class="projectsSubGrid unscrolled" style="grid-area: card2;">
+								<div class="z-depth-5 projectCard" target="_blank" style="grid-area: card;">
 									<div class="projectCardCover" style="background: #002878;">
 										<img src="duckArt.png" style="height: auto; width: 50%; margin: 0 auto; object-fit: ;">
 									</div>
 								</div>
-								<div style="grid-area: description; display: flex; flex-direction: column; justify-content: center;">
-									<p style="margin: 0; font-size: 1.2rem; font-weight: 100; padding-left: 24px;">
-										<span style="font-size: 1.5rem; font-weight: 300;">What the DUC? <span style="font-weight: 100; color: #ef9a9a;">&nbsp;[in progress]</span></span><br>
-										<span style="font-weight: 300; color: #757575;">An iOS app for Emory's main dining hall.</span><br>
-										<br>
-										<span style="font-weight: 300;">Started:</span>&nbsp; November 2017<br>
-										<span style="font-weight: 300;">Role:</span>&nbsp; iOS Developer<br>
-										<span style="font-weight: 300;">Languages:</span>&nbsp; Swift<br>
-										<span style="font-weight: 300;">Technologies:</span>&nbsp; Xcode<br>
+								<div class="projectCardDescriptionContainer" style="grid-area: description;">
+									<p class="projectCardDescription">
+										<a class="projectLink"><span>What the DUC?&nbsp;</span></a><br>
+										<span style="line-height: 2rem; font-weight: 500;">Creator, <span style="font-style: italic;">Since January 2018</span></span><br>
+										<span style="font-weight: 500;">Atlanta, GA</span><br><br>
+										<span style="line-height: 1.5rem;">What the DUC? is an app I made for Emory's dining hall (Dobbs University Center). It displays a daily rating based on students' experiences with the DUC, so others can decide whether they need to find an alternative food place for that day.</span>
 									</p>
 								</div>
 							</div>
 
-							<div class="z-depth-1 projectsSubGrid unscrolled" style="grid-area: card3;">
-								<div class="projectCard" target="_blank" style="grid-area: card;">
-									<div class="projectCardCover" style="background: #fff;">
-										<img src="websiteIMG4.png" style="height: 100%; width: 100%; object-fit: cover;">
+							<div class="projectsSubGrid unscrolled" style="grid-area: card3;">
+								<div class="z-depth-5 projectCard" target="_blank" style="grid-area: card;">
+									<div class="projectCardCover" style="background: #6600CC;">
+										<img src="images/FlashFood.png" style="height: auto; width: 50%; margin: 0 auto; object-fit: ;">
 									</div>
 								</div>
-								<div style="grid-area: description; display: flex; flex-direction: column; justify-content: center;">
-									<p style="margin: 0; font-size: 1.2rem; font-weight: 100; padding-left: 24px;">
-										<span style="font-size: 1.5rem; font-weight: 300;">Personal Website</span><br>
-										<span style="font-weight: 300; color: #757575;">This was a blast to make. I hope you like it!</span><br>
-										<br>
-										<span style="font-weight: 300;">Started:</span>&nbsp; October 2017<br>
-										<span style="font-weight: 300;">Role:</span>&nbsp; Myself<br>
-										<span style="font-weight: 300;">Languages:</span>&nbsp; HTML/CSS, JavaScript<br>
-										<span style="font-weight: 300;">Frameworks:</span>&nbsp; None<br>
+								<div class="projectCardDescriptionContainer" style="grid-area: description;">
+									<p class="projectCardDescription">
+										<a class="projectLink">Flash Food</a><br>
+										<span style="line-height: 2rem; font-weight: 500;">Creator, <span style="font-style: italic;">Since December 2018</span></span><br>
+										<span style="font-weight: 500;">Atlanta, GA</span><br><br>
+										<span style="line-height: 1.5rem;">Flash Food is an app that takes a preferred distance, price, and category list and tells you where to eat. A friend and I decided to make this app as an introduction to React Native and Redux.</span>
+									</p>
+								</div>
+							</div>
+
+							<div class="projectsSubGrid unscrolled" style="grid-area: card4;">
+								<div class="z-depth-5 projectCard" target="_blank" style="grid-area: card;">
+									<div class="projectCardCover" style="background: #fff;">
+										<img src="images/mikeMainCropped2.jpg" style="height: 100%; width: 100%; object-fit: cover;">
+									</div>
+								</div>
+								<div class="projectCardDescriptionContainer" style="grid-area: description;">
+									<p class="projectCardDescription">
+										<a class="projectLink" href="https://fetchmi.com" target="_blank">This Website</a><br>
+										<span style="line-height: 2rem; font-weight: 500;">Creator, <span style="font-style: italic;">November 2017</span></span><br>
+										<span style="font-weight: 500;">Atlanta, GA</span><br><br>
+										<span style="line-height: 1.5rem;">I made this website as a place where I could express myself, design without a framework, and easily experiement with code. I hope you enjoy it!</span>
 									</p>
 								</div>
 							</div>
@@ -222,14 +232,15 @@
 					</div>
 				</div>
 
-				<div id="doodlesContainer" class="sectionContainer">					<div class="sectionSubContainer">
+				<div id="doodlesContainer" class="sectionContainer">					
+					<div class="sectionSubContainer">
 						<!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #e0e0e0; text-align: center;">D00DLES</p-->
 						<p id="sectionSubtitleDoodles" class="sectionSubtitle unscrolled">Just for fun.</p>
 						<div style="height: 8vh;"></div>
-						<div class="z-depth-1 unscrolled" style="width: 100%; height: auto; padding: 32px; border-radius: 5px; background: #fff;">
+						<div class="unscrolled" style="width: 100%; height: auto; border-radius: 5px;">
 							<div class="TTTContainer">
 								<div style="height: 100%; width: 100%; float: left; display: flex; flex-direction: column; justify-content: center; grid-area: c1; position: relative;">
-									<div class="TTTBox">
+									<div class="z-depth-5 TTTBox">
 										<a id="b0" class="TTTSpot" data-spot="0" style="grid-area: b0;">
 											<i class="material-icons TTTIcon"></i>
 										</a>
@@ -265,14 +276,11 @@
 										</a>
 									</div>
 								</div>
-								<div style="float: left; width: auto; grid-area: c2; padding: 0 10%;">
-									<p style="font-weight: 400; letter-spacing: 1px; font-size: 2rem; line-height: 2rem; margin: 0; color: #757575;">Tic-Tac-Toe Minimax</p>
-									<p style="font-weight: 100; letter-spacing: 1px; font-size: 1.2rem; margin: 6px 0; color: #222222;">
-										<span style="font-size: 1.5rem; line-height: 1.5rem;">An unbeatable Tic-Tac-Toe game</span><br>
-										<br>
-										<span style="font-weight: 300;">Languages:</span> JavaScript <br>
-										<span style="font-weight: 300;">References:</span> Minimax Algorithm <br>
-										<span style="font-weight: 300;">Completed:</span> November 2017 <br>
+								<div style="float: left; width: auto; grid-area: c2; padding: 16px 48px;">
+									<p style="margin: 0; font-size: 1.1rem; font-weight: 300; color: #292929;">
+										<a class="projectLink" href="https://fetchmi.com" target="_blank">Tic-Tac-Toe Bot</a><br>
+										<span style="line-height: 2rem; font-weight: 500; font-style: italic;">Created November 2017</span><br><br>
+										<span style="line-height: 1.5rem;">I read about the Minimax Algorithm and decided to test my understanding by using it to create an unbeatable game of Tic-Tac-Toe.</span>
 									</p>
 								</div>
 							</div>
@@ -281,36 +289,35 @@
 				</div>
 
 
-				<div id="photosContainer" class="sectionContainer" style="background: #fafafa;">		
-					<p id="sectionSubtitleDoodles" class="sectionSubtitle unscrolled">My snapshots.</p>
-					<div style="height: 8vh;"></div>
-					<div class="photosGrid">
-						<div style="grid-area: p1;">
-							<img class="z-depth-3 photosPhoto unscrolled" src="images/image1Cropped.jpg">
-						</div>
-						<div style="grid-area: p2;">
-							<img class="z-depth-3 photosPhoto unscrolled" src="images/image2Cropped.jpg">
-						</div>
-						<div style="grid-area: p3;">
-							<img class="z-depth-3 photosPhoto unscrolled" src="images/image3Cropped.jpg">
-						</div>
-						<div style="grid-area: p4;">
-							<img class="z-depth-3 photosPhoto unscrolled" src="images/image4Cropped.jpg">
-						</div>
-						<div style="grid-area: p5;">
-							<img class="z-depth-3 photosPhoto unscrolled" src="images/image5Cropped.jpg">
-						</div>
-						<div style="grid-area: p6;">
-							<img class="z-depth-3 photosPhoto unscrolled" src="images/image6Cropped.jpg">
-						</div>
-						<div style="grid-area: p7;">
-							<img class="z-depth-3 photosPhoto unscrolled" src="images/image7Cropped.jpg">
-						</div>
-						<div style="grid-area: p8;">
-							<img class="z-depth-3 photosPhoto unscrolled" src="images/image8Cropped.jpg">
-						</div>
-						<div style="grid-area: p9;">
-							<img class="z-depth-3 photosPhoto unscrolled" src="images/image9Cropped.jpg">
+				<div id="photosContainer" class="sectionContainer" style="background: #fafafa;">
+					<div class="sectionSubContainer">		
+						<p id="sectionSubtitleDoodles" class="sectionSubtitle unscrolled">My snapshots.</p>
+						<div style="height: 8vh;"></div>
+						<div class="photosGrid">
+							<div style="grid-area: p1;">
+								<img class="z-depth-3 photosPhoto unscrolled" src="images/image1Cropped.jpg">
+							</div>
+							<div style="grid-area: p2;">
+								<img class="z-depth-3 photosPhoto unscrolled" src="images/image2Cropped.jpg">
+							</div>
+							<div style="grid-area: p3;">
+								<img class="z-depth-3 photosPhoto unscrolled" src="images/image3Cropped.jpg">
+							</div>
+							<div style="grid-area: p4;">
+								<img class="z-depth-3 photosPhoto unscrolled" src="images/image4Cropped.jpg">
+							</div>
+							<div style="grid-area: p5;">
+								<img class="z-depth-3 photosPhoto unscrolled" src="images/image6Cropped.jpg">
+							</div>
+							<div style="grid-area: p6;">
+								<img class="z-depth-3 photosPhoto unscrolled" src="images/image7Cropped.jpg">
+							</div>
+							<div style="grid-area: p7;">
+								<img class="z-depth-3 photosPhoto unscrolled" src="images/image8Cropped.jpg">
+							</div>
+							<div style="grid-area: p8;">
+								<img class="z-depth-3 photosPhoto unscrolled" src="images/image9Cropped.jpg">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -327,18 +334,19 @@
 				</div>
 
 			</div>
-		</div>
 
-		<div id="contactContainer" class="contactContainer" style="overflow: auto; width: auto; position: relative; text-align: center; height: 100vh; background: #222222; display: flex; flex-direction: column; justify-content: center;">
-			<div class="sectionSubContainer">
-				<!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #616161; text-align: center;">C0NTACT</p-->
-				<p id="sectionSubtitleDoodles" class="sectionSubtitle unscrolled" style="color: #fff;">Get in touch.</p>
 
-				<div style="height: 6vh;"></div>
+			<div id="contactContainer" class="contactContainer" style="overflow: auto; width: auto; position: relative; text-align: center; height: 100vh; background: #222222; display: flex; flex-direction: column; justify-content: center;">
+				<div class="sectionSubContainer">
+					<!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #616161; text-align: center;">C0NTACT</p-->
+					<p id="sectionSubtitleDoodles" class="sectionSubtitle unscrolled" style="color: #fff;">Get in touch.</p>
 
-				<div style="clear: both; display: inline-block; margin: 0 auto; color: #fff; ">
-					<a class="contactLink unscrolled"><img src="images/gmailIcon.png" class="contactIcon" style=" border-radius: 15px;"></a>
-					<a class="contactLink unscrolled"><img src="images/linkedinIcon.png" class="contactIcon" style=" border-radius: 15px;"></a>
+					<div style="height: 6vh;"></div>
+
+					<div style="clear: both; display: inline-block; margin: 0 auto; color: #fff; ">
+						<a class="contactLink unscrolled"><img src="images/gmailIcon.png" class="contactIcon" style=" border-radius: 15px;"></a>
+						<a class="contactLink unscrolled"><img src="images/linkedinIcon.png" class="contactIcon" style=" border-radius: 15px;"></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -582,11 +590,15 @@
 			setTimeout(function() {
 				$('#homeCurtain1').addClass('z-depth-5');
 				$('#homeCurtain2').addClass('z-depth-5');
+				$('#homeCurtain3').addClass('z-depth-5');
+				$('#homeCurtain4').addClass('z-depth-5');
 				$('#homeLinks').addClass('gone');
 			},);
 			setTimeout(function() {
 				$('#homeCurtain1').addClass('active');
 				$('#homeCurtain2').addClass('active');
+				$('#homeCurtain3').addClass('active');
+				$('#homeCurtain4').addClass('active');
 				$('.mikeImage').addClass('active');
 				$('#homeLinks').addClass('return');
 			}, 600);
@@ -609,7 +621,7 @@
 
 			if (numScrolled < unscrolled.length) {
 				for (i = numScrolled; i < unscrolled.length; i++) {
-					if (($(unscrolled[i]).offset().top + ($(unscrolled[i]).height()) / 2) <= $(window).height() + $(window).scrollTop()) {
+					if (($(unscrolled[i]).offset().top + 50) <= $(window).height() + $(window).scrollTop()) {
 					$(unscrolled[i]).addClass('scrolled');
 						numScrolled++;
 					}
