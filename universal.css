@@ -685,11 +685,11 @@ a:hover {
 @media screen and (max-width: 991px) {
 
 	.projectCard {
-		margin: 6vh auto 2vh auto;
+		margin: 0 auto 2vh auto;
 	}
 
 	.projectsGrid {
-		grid-gap: 24px;
+		grid-gap: 64px;
 		grid-template:
 			[row1-start] "card1" auto [row1-end]
 			[row2-start] "card2" auto [row2-end]
