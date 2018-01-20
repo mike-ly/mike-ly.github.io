@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<title>Mike</title>
-		<link rel="stylesheet" type="text/css" href="universal.css">
+		<link rel="stylesheet" type="text/css" href="css/universal.css">
+		<link rel="stylesheet" type="text/css" href="css/circle.css">
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700,900" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -17,12 +18,12 @@
 			<i id="homeIconDoodles"  class="material-icons homeIcon" style="width: 60vh; height: 60vh; font-size: 60vh;">gesture</i>
 			<!--a id="homeIconMail" class="mdi mdi-email homeIcon" style="height: 60vh; width: 60vh; font-size: 60vh;"></a>
 			<a id="homeIconLinkedin" class="mdi mdi-linkedin-box homeIcon" style="height: 60vh; width: 60vh; font-size: 60vh;"></a-->
-			<img class="mikeImage" src="images/mikeMainCroppedBig.jpg">
+			<img id="mikeImageHome" class="mikeImage" src="images/mikeMainCroppedBig.jpg">
 			<div style="display: flex; flex-direction: column; justify-content: center;">
-				<p id="homeLinks" class="homeLinks">
+				<p id="homeLinks" class="homeLinks gone">
 					<span style="font-weight: 800; font-size: 6rem; letter-spacing: 2px; font-family: 'Dosis', sans-serif; color:" onclick="scrollTo();">
 						<span style="opacity: 1; font-size: 4rem; font-weight: 700;">HI, I'M</span><br>
-						<span style="opacity: 1;">M</span><span style="color: #4fc3f7;">i</span><span style="opacity: 1">KE LY</span><br><br>
+						<span style="opacity: 1;">M</span><span style="color: #4fc3f7;">i</span><span style="opacity: 1">KE LY</span>
 					</span><!--br>
 					<br>
 					<a id="homeLinkMike" class="homeLink" style="font-weight: 100;" onclick="scrollTo();">&nbsp;&nbsp;INTR0</a><br>
@@ -33,9 +34,10 @@
 				</p>
 			</div>
 			<!-- <div id="homeCurtain3" class="homeCurtain3"></div>
-			<div id="homeCurtain4" class="homeCurtain4"></div> -->
+			<div id="homeCurtain4" class="homeCurtain4"></div>
 			<div id="homeCurtain1" class="homeCurtain1"></div>
-			<div id="homeCurtain2" class="homeCurtain2"></div>
+			<div id="homeCurtain2" class="homeCurtain2"></div> -->
+			<div id="homeCurtainFull" class="homeCurtainFull"></div>
 			<!--a id="homeLinkMail" class="mdi mdi-email homeContactMeLink" style="position: relative; z-index: 2;"></a>
 			<div class="homeContactMe">
 				<a id="homeLinkMail" class="mdi mdi-email homeContactMeLink"></a>
@@ -61,7 +63,7 @@
 
 			<div style="width: 100%; margin: 0 auto;">
 
-				<div id="mikeContainer" class="sectionContainer" style="background: #fafafa;">
+				<div id="mikeContainer" class="sectionContainer">
 					<div class="sectionSubContainer">
 						<!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #e0e0e0; text-align: center;">MiKE</p-->
 						<p class="sectionSubtitle unscrolled">About me.</p>
@@ -157,13 +159,13 @@
 					</div>
 				</div>
 
-				<div id="doodlesContainer" class="sectionContainer">					
+				<!-- <div id="doodlesContainer" class="sectionContainer">					
 					<div class="sectionSubContainer">
-						<!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #e0e0e0; text-align: center;">D00DLES</p-->
+						p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #e0e0e0; text-align: center;">D00DLES</p
 						<p class="sectionSubtitle unscrolled">What I can do.</p>
 						<div style="height: 8vh;"></div>
 					</div>
-				</div>
+				</div> -->
 
 				<div id="projectsContainer" class="sectionContainer" style="background: #fafafa;">	
 					<div class="sectionSubContainer">					
@@ -597,22 +599,30 @@
 			// 	$('#homeLinkContact').addClass('active');
 			// }, 1100);
 			setTimeout(function() {
-				$('#homeCurtain1').addClass('z-depth-5');
-				$('#homeCurtain2').addClass('z-depth-5');
+				// $('#homeCurtain1').addClass('z-depth-5');
+				// $('#homeCurtain2').addClass('z-depth-5');
 				// $('#homeCurtain3').addClass('z-depth-5');
 				// $('#homeCurtain4').addClass('z-depth-5');
-				$('#homeLinks').addClass('gone');
+				//$('#homeLinks').addClass('gone');
 			},);
 			setTimeout(function() {
-				$('#homeCurtain1').addClass('active');
-				$('#homeCurtain2').addClass('active');
+				// $('#homeCurtain1').addClass('active');
+				// $('#homeCurtain2').addClass('active');
 				// $('#homeCurtain3').addClass('active');
 				// $('#homeCurtain4').addClass('active');
-				$('.mikeImage').addClass('active');
-				$('#homeLinks').addClass('return');
 			}, 600);
 
 		});
+
+		function imageLoaded() {
+			$('#homeCurtainFull').addClass('active');
+			$('#mikeImageHome').addClass('active');
+			$('#homeLinks').addClass('return');
+		};
+
+		var img = new Image();
+		img.onload = imageLoaded();
+		img.src = "images/mikeMainCroppedBig.jpg";
 
 		var unscrolled = document.getElementsByClassName('unscrolled');
 

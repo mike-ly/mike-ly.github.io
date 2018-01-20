@@ -458,7 +458,7 @@ a:hover {
 	width: 50%;
 	height: 100%;
 	background: #fff;
-	transition: all 2s;
+	transition: all 3s;
 }
 
 .homeCurtain2 {
@@ -467,7 +467,7 @@ a:hover {
 	width: 50%;
 	height: 100%;
 	background: #fff;
-	transition: all 2s;
+	transition: all 3s;
 }
 
 .homeCurtain3 {
@@ -476,7 +476,7 @@ a:hover {
 	height: 50%;
 	width: 100%;
 	background: #fff;
-	transition: all 2s;
+	transition: all 3s;
 }
 
 .homeCurtain4 {
@@ -485,15 +485,29 @@ a:hover {
 	height: 50%;
 	width: 100%;
 	background: #fff;
-	transition: all 2s;
+	transition: all 3s;
+}
+
+.homeCurtainFull {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #000000;
+	transition: all 5s;
 }
 
 .homeCurtain1.active, .homeCurtain2.active {
-	width: 0;
+	opacity: 0;
 }
 
 .homeCurtain3.active, .homeCurtain4.active {
-	height: 0;
+	opacity: 0;
+}
+
+.homeCurtainFull.active {
+	opacity: 0;
 }
 
 @media screen and (max-width: 601px) {
@@ -553,6 +567,26 @@ a:hover {
 
 .experienceBarBeginner {
 	width: 40%;
+}
+
+.experienceTextContainer {
+	position: absolute; 
+	display: flex;
+	z-index: 11;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.experienceText {
+	font-size: 18px;
+	text-align: center;
+	color: #47afde;
+	margin: 24px;
+	font-weight: 400;
 }
 
 @media screen and (max-width: 991px) {
