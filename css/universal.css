@@ -10,7 +10,6 @@
 body {
 	margin: 0;
 	font-family: 'Roboto', 'sans-serif';
-	background: #000000;
 	color: #222222;
 	transition: all 0.5s ease-in-out;
 }
@@ -82,6 +81,13 @@ a:hover {
 	box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
 }
 
+.sectionsBigContainer {
+	/*background: linear-gradient(0deg, #fff, #e0f2f1);*/
+	background: #fff;
+	z-index: 10;
+	position: relative;
+}
+
 .sectionSubtitle {
 	font-weight: 800;
 	letter-spacing: 2px;
@@ -93,7 +99,7 @@ a:hover {
 	transition: all 1s ease-out;
 	text-align: left;
 	display: inline-block;
-	border-bottom: 6px solid #4fc3f7;
+	border-bottom: 6px solid #90caf9;
 	font-family: 'Dosis', sans-serif;
 	width: auto;
 }
@@ -101,11 +107,13 @@ a:hover {
 .sectionContainer {
 	width: auto;
 	position: relative;
-	padding: 20vh 15%;
+	padding: 20vh 20%;
+	background: transparent !important;
 }
 
 .sectionSubContainer {
 	max-width: 900px;
+	min-width: 500px;
 	margin: 0 auto;
 }
 
@@ -383,7 +391,7 @@ a:hover {
 }
 
 .landingSection {
-	background: linear-gradient(0deg, #80cbc4, #fff);
+	background: linear-gradient(0deg, #fff, #bbdefb);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -393,15 +401,19 @@ a:hover {
 
 .mikeImage {
 	object-fit: cover;
-	transition: all 2s;
-	height: 420px;
-	width: 420px;
+	transition: all 1s ease-in-out;
+	height: 400px;
+	width: 400px;
 	border-radius: 50%;
 	margin: 0 auto;
+	/*transform: translateY(16px);*/
+	/*opacity: 0;*/
 }
 
 .mikeImage.active {
 	box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+	transform: translateY(0);
+	opacity: 1;
 }
 
 .homeLink.active {
@@ -546,9 +558,9 @@ a:hover {
 }
 
 .aboutText {
-	font-size: 1.3rem;
-	font-weight: 200;
-	color: #222222;
+	font-size: 1.5rem;
+	font-weight: 300;
+	letter-spacing: 0.5px;
 	line-height: 3rem;
 	margin: 0;
 	text-align: left;
@@ -659,7 +671,7 @@ a:hover {
 	position: relative;
 	padding: 24px;
 	transition: all 0.5s ease-in-out;
-	border-radius: 32px;
+	border-radius: 50%;
 }
 
 .projectCardCover {
@@ -1003,10 +1015,6 @@ a:hover {
 	height: 128px;
 	background: #fff;
 	transition: box-shadow 0.3s;
-}
-
-.contactIcon:hover {
-	box-shadow: 0px 0px 50px #fff;
 }
 
 /*==========================================================================*/
