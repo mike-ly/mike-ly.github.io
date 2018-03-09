@@ -12,6 +12,7 @@ body {
 	font-family: 'Roboto', 'sans-serif';
 	color: #222222;
 	transition: all 0.5s ease-in-out;
+	background: #c8e6c9;
 }
 
 .bodyInvis {
@@ -99,7 +100,7 @@ a:hover {
 	transition: all 1s ease-out;
 	text-align: left;
 	display: inline-block;
-	border-bottom: 6px solid #90caf9;
+	border-bottom: 6px solid #c8e6c9;
 	font-family: 'Dosis', sans-serif;
 	width: auto;
 }
@@ -113,7 +114,6 @@ a:hover {
 
 .sectionSubContainer {
 	max-width: 900px;
-	min-width: 500px;
 	margin: 0 auto;
 }
 
@@ -391,7 +391,7 @@ a:hover {
 }
 
 .landingSection {
-	background: linear-gradient(0deg, #fff, #bbdefb);
+	background: linear-gradient(0deg, #fff, #c8e6c9);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -402,8 +402,8 @@ a:hover {
 .mikeImage {
 	object-fit: cover;
 	transition: all 1s ease-in-out;
-	height: 400px;
-	width: 400px;
+	height: 50vh;
+	width: 50vh;
 	border-radius: 50%;
 	margin: 0 auto;
 	/*transform: translateY(16px);*/
@@ -560,7 +560,6 @@ a:hover {
 .aboutText {
 	font-size: 1.5rem;
 	font-weight: 300;
-	letter-spacing: 0.5px;
 	line-height: 3rem;
 	margin: 0;
 	text-align: left;
@@ -1015,6 +1014,15 @@ a:hover {
 	height: 128px;
 	background: #fff;
 	transition: box-shadow 0.3s;
+}
+
+@media screen and (max-width: 601px) {
+
+	.contactLink {
+		float: none;
+		padding: 16px;
+	}
+
 }
 
 /*==========================================================================*/
