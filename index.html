@@ -317,7 +317,7 @@
 			</div>
 
 
-			<div id="contactContainer" class="contactContainer" style="overflow: auto; width: auto; position: relative; text-align: center; height: 100vh; background: linear-gradient(0deg, #cfd8dc, #fff); display: flex; flex-direction: column; justify-content: center;">
+			<div id="contactContainer" class="contactContainer" style="overflow: auto; width: auto; position: relative; text-align: center; height: 100vh; background: linear-gradient(0deg, #c8e6c9, #fff); display: flex; flex-direction: column; justify-content: center;">
 				<div class="sectionSubContainer">
 					<!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #616161; text-align: center;">C0NTACT</p-->
 					<p class="sectionSubtitle unscrolled">Get in touch.</p>
@@ -610,7 +610,7 @@
 
 			if (numScrolled < unscrolled.length) {
 				for (i = numScrolled; i < unscrolled.length; i++) {
-					if (($(unscrolled[i]).offset().top + 50) <= $(window).height() + $(window).scrollTop()) {
+					if (($(unscrolled[i]).offset().top + 100) <= $(window).height() + $(window).scrollTop()) {
 					$(unscrolled[i]).addClass('scrolled');
 						numScrolled++;
 					}
