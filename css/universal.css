@@ -21,10 +21,10 @@ body {
 }
 
 ::selection {
-  background: #4fc3f7; /* WebKit/Blink Browsers */
+  background: #c8e6c9; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #4fc3f7; /* Gecko Browsers */
+  background: #c8e6c9; /* Gecko Browsers */
 }
 
 a, br, .noselect {
@@ -125,15 +125,62 @@ a:hover {
 	color: #4bd6ac !important;
 }
 
-.unscrolled {
+.unscrolledCombo.unscrolled > .unscrolledStandard {
 	transform: translateY(100px);
 	opacity: 0;
 	visibility: hidden;
 	transition: transform 1s, opacity 1s, visibility 1s;
+	position: relative;
+	z-index: 2;
 }
 
-.scrolled {
+.unscrolledCombo.unscrolled > .unscrolledHorizontal {
+	transform: translateX(-75px);
+	opacity: 0;
+	visibility: hidden;
+	transition: transform 0.75s 0.5s, opacity 0.75s 0.5s, visibility 0.75s 0.5s;
+	position: relative; 
+	z-index: 1;
+}
+
+.unscrolledCombo.scrolled > .unscrolledStandard {
 	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.unscrolledCombo.scrolled > .unscrolledHorizontal {
+	transform: translateX(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.unscrolledStandard.unscrolled  {
+	transform: translateY(100px);
+	opacity: 0;
+	visibility: hidden;
+	transition: transform 1s, opacity 1s, visibility 1s;
+	position: relative;
+	z-index: 2;
+}
+
+.unscrolledStandard.scrolled {
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+
+.unscrolledHorizontal.unscrolled  {
+	transform: translateX(-75px);
+	opacity: 0;
+	visibility: hidden;
+	transition: transform 0.75s 0.25s, opacity 0.75s 0.25s, visibility 0.75s 0.25s;
+	position: relative; 
+	z-index: 1;
+}
+
+.unscrolledHorizontal.scrolled {
+	transform: translateX(0);
 	opacity: 1;
 	visibility: visible;
 }
@@ -397,23 +444,38 @@ a:hover {
 	justify-content: center;
 	height: 100vh;
 	width: 100vw;
+	transition: all 0.5s;
+	position: relative;
+}
+
+.landingSectionOverlay {
+	background: #fff;
+	height: 100vh;
+	width: 100vw;
+	transition: all 1s ease-in-out;
+	position: absolute;
+}
+
+.landingSectionOverlay.scrolled {
+	opacity: 0;
 }
 
 .mikeImage {
 	object-fit: cover;
-	transition: all 1s ease-in-out;
+	transition: all 1s ease-out;
 	height: 50vh;
 	width: 50vh;
 	border-radius: 50%;
 	margin: 0 auto;
-	/*transform: translateY(16px);*/
-	/*opacity: 0;*/
+	transform: translateY(64px);
+	filter: grayscale(80%);
+	box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
 }
 
 .mikeImage.active {
-	box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
 	transform: translateY(0);
 	opacity: 1;
+	filter: grayscale(40%);
 }
 
 .homeLink.active {
@@ -684,12 +746,14 @@ a:hover {
 	top: 0;
 	left: 0;
 	opacity: 1;
+	z-index: 2;
 }
 
 .projectCardDescriptionContainer {
 	display: flex;
 	flex-direction: column;
 	padding-top: 16px;
+	z-index: 1;
 }
 
 .projectCardDescription {
@@ -804,6 +868,7 @@ a:hover {
 		[row3-start] "b6 b7 b8" 32% [row3-end]
 		/32% 32% 32%;
 	float: left;
+	background: #fff;
 }
 
 .TTTSpot {
