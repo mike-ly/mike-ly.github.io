@@ -12,7 +12,7 @@ body {
 	font-family: 'Roboto', 'sans-serif';
 	color: #222222;
 	transition: all 0.5s ease-in-out;
-	background: #fff;
+	background: #e8f5e9;
 }
 
 .bodyInvis {
@@ -92,9 +92,9 @@ a:hover {
 .sectionSubtitle {
 	font-weight: 800;
 	letter-spacing: 2px;
-	height: 6rem;
-	line-height: 6rem;
-	font-size: 3.5rem;
+	height: 5rem;
+	line-height: 5rem;
+	font-size: 2.5rem;
 	margin: 0 auto;
 	color: #222222;
 	transition: all 1s ease-out;
@@ -126,7 +126,7 @@ a:hover {
 }
 
 .unscrolledCombo.unscrolled > .unscrolledStandard {
-	transform: translateY(100px);
+	transform: translateY(75px);
 	opacity: 0;
 	visibility: hidden;
 	transition: transform 1s, opacity 1s, visibility 1s;
@@ -156,7 +156,7 @@ a:hover {
 }
 
 .unscrolledStandard.unscrolled  {
-	transform: translateY(100px);
+	transform: translateY(75px);
 	opacity: 0;
 	visibility: hidden;
 	transition: transform 1s, opacity 1s, visibility 1s;
@@ -216,6 +216,54 @@ a:hover {
 
 /*==========================================================================*/
 /* -GENERAL END */
+/*==========================================================================*/
+
+
+/*==========================================================================*/
+/* -MENU START */
+/*==========================================================================*/
+
+.menuContainer {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+
+.menuIconContainer {
+	position: fixed;
+	top: 56px;
+	right: 64px;
+	height: 32px;
+	width: 42px;
+	z-index: 100;
+}
+
+.menuIconBarTop {
+	width: 100%;
+	height: 6%;
+	background: #000;
+}
+
+.menuIconBarMid {
+	width: 100%;
+	height: 6%;
+	background: #000;
+}
+
+.menuIconBarBot {
+	width: 100%;
+	height: 6%;
+	background: #000;
+}
+
+.menuIconDivider {
+	width: 100%;
+	height: 41%;
+}
+
+/*==========================================================================*/
+/* -MENU END */
 /*==========================================================================*/
 
 
@@ -363,7 +411,6 @@ a:hover {
 	text-align: left;
 	z-index: 3;
 	position: relative;
-	background: #292929;
 	display: grid;
 	/*grid-template: 
 		[row1-start] "h2" 100vh [row1-end]
@@ -840,12 +887,11 @@ a:hover {
 /*==========================================================================*/
 
 
-
 /*==========================================================================*/
-/* -TTT START */
+/* -DOODLE START */
 /*==========================================================================*/
 
-.TTTContainer {
+.doodleContainer {
 	width: auto;
 	position: relative;
 	display: grid;
@@ -855,6 +901,83 @@ a:hover {
 		[row1-start] "c1 c2" 100% [row1-end]
 		/300px 1fr;
 }
+
+.doodleGrid1 {
+	height: 100%;
+	width: 100%;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	grid-area: c1;
+	position: relative;
+}
+
+.doodleGrid2 {
+	float: left;
+	width: auto;
+	grid-area: c2;
+	padding: 16px 0;
+	position: relative;
+}
+
+.doodleHeader {
+	margin: 0;
+	font-size: 1.1rem;
+	font-weight: 300;
+	color: #222222;
+	text-align: left;
+}
+
+.doodleModalBackground {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: 0.5;
+	z-index: 99;
+}
+
+.doodleModal {
+	position: fixed;
+	top: 10vh;
+	left: 10vw;
+	width: 80vw;
+	height: 80vh;
+	background: #fff;
+	border-radius: 10px;
+	z-index: 100;
+}
+
+@media screen and (max-width: 991px) {
+
+	.doodleContainer {
+		width: auto;
+		position: relative;
+		display: grid;
+		padding: 0;
+		grid-template:
+			[row1-start] "c1" 300px [row1-end]
+			[row2-start] "c2" auto [row2-end]
+			/1fr;
+	}
+
+	.doodleHeader {
+		text-align: center;
+	}
+
+}
+
+/*==========================================================================*/
+/* -DOODLE END */
+/*==========================================================================*/
+
+
+/*==========================================================================*/
+/* -TTT START */
+/*==========================================================================*/
 
 .TTTBox {
 	width: 300px;
@@ -869,7 +992,6 @@ a:hover {
 		[row2-start] "b3 b4 b5" 32% [row2-end]
 		[row3-start] "b6 b7 b8" 32% [row3-end]
 		/32% 32% 32%;
-	float: left;
 	background: #fff;
 }
 
@@ -881,7 +1003,7 @@ a:hover {
 	flex-direction: column;
 	justify-content: center;
 	transition: all 0.5s;
-	border-radius: 0px;
+	border-radius: 5px;
 }
 
 .TTTSpotSelected {
@@ -986,35 +1108,79 @@ a:hover {
     -webkit-transform: rotate(360deg);
 }
 
-.TTTHeader {
-	margin: 0;
-	font-size: 1.1rem;
-	font-weight: 300;
-	color: #222222;
-	text-align: left;
+/*==========================================================================*/
+/* -TTT END */
+/*==========================================================================*/
+
+
+/*==========================================================================*/
+/* -PARSONS START */
+/*==========================================================================*/
+
+.parsonsBox {
+	width: 300px;
+	height: auto;
+	margin: 0 auto;
+	padding: 24px;
+	border-radius: 16px;
+	background: #fff;
 }
 
-@media screen and (max-width: 991px) {
+.parsonsPlay {
+	display: block;
+	height: 48px;
+	width: 100%;
+	border-radius: 5px;
+	padding: 0 24px;
+	margin-bottom: 8px;
+	color: #fff;
+	transition: all 0.3s;
+}
 
-	.TTTContainer {
-		width: auto;
-		position: relative;
-		display: grid;
-		padding: 0;
-		grid-template:
-			[row1-start] "c1" 300px [row1-end]
-			[row2-start] "c2" auto [row2-end]
-			/1fr;
-	}
+.parsonsPlay.parsonsBlue {
+	background: #90caf9;
+}
 
-	.TTTHeader {
-		text-align: center;
-	}
+.parsonsPlay.parsonsGreen {
+	background: #a5d6a7;
+}
 
+.parsonsPlay.parsonsRed {
+	background: #ef9a9a;
+}
+
+.parsonsPlay.parsonsBlue:hover {
+	background: #64b5f6;
+}
+
+.parsonsPlay.parsonsGreen:hover {
+	background: #81c784;
+}
+
+.parsonsPlay.parsonsRed:hover {
+	background: #e57373;
+}
+
+.parsonsPlayName {
+	margin: 0 auto;
+	display: inline-block;
+	text-transform: uppercase;
+	line-height: 48px;
+	font-weight: 300;
+	float: left;
+	letter-spacing: 0.5px;
+}
+
+.parsonsPlayArrow {
+	margin: 0 auto;
+	display: inline-block;
+	line-height: 48px !important;
+	float: right;
+	opacity: 0.7;
 }
 
 /*==========================================================================*/
-/* -TTT END */
+/* -PARSONS END */
 /*==========================================================================*/
 
 

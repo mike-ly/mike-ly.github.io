@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="jquery-3.2.1.min.js"></script>
 	</head>
-	<body class="">
+	<body>
 		<div id="homeContainer" class="homeContainer">
 			<div class="landingSection">
 				<div class="landingSectionOverlay unscrolled"></div>
@@ -172,7 +172,7 @@
 								<div class="projectCardDescriptionContainer unscrolledHorizontal" style="grid-area: description;">
 									<p class="projectCardDescription">
 										<a class="projectLink"><span>What the DUC?&nbsp;</span></a><br>
-										<span style="line-height: 2rem; font-weight: 500;">Creator, <span style="font-style: italic;">Started January 2018</span></span><br>
+										<span style="line-height: 2rem; font-weight: 500;">Creator, <span style="font-style: italic;">Since January 2018</span></span><br>
 										<span style="font-weight: 500;">Atlanta, GA</span><br><br>
 									</p>
 									<p class="projectCardDescription" style="text-align: left;">What the DUC? is an app I made for Emory's dining hall (Dobbs University Center). It displays a daily rating based on students' experiences with the DUC, so others can decide whether they need to find an alternative food place for that day.</p>
@@ -188,7 +188,7 @@
 								<div class="projectCardDescriptionContainer unscrolledHorizontal" style="grid-area: description;">
 									<p class="projectCardDescription">
 										<a class="projectLink">Flash Food</a><br>
-										<span style="line-height: 2rem; font-weight: 500;">Creator, <span style="font-style: italic;">Started December 2017</span></span><br>
+										<span style="line-height: 2rem; font-weight: 500;">Creator, <span style="font-style: italic;">Since December 2017</span></span><br>
 										<span style="font-weight: 500;">Atlanta, GA</span><br><br>
 									</p>
 									<p class="projectCardDescription" style="text-align: left;">Flash Food is an app that takes a preferred distance, price, and category list and tells you where to eat. A friend and I decided to make this app as an introduction to React Native and Redux.</p>
@@ -219,54 +219,84 @@
 						<!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #e0e0e0; text-align: center;">D00DLES</p-->
 						<p class="sectionSubtitle unscrolled unscrolledStandard">Just for fun.</p>
 						<div style="height: 8vh;"></div>
-						<div style="width: 100%; height: auto; border-radius: 5px;">
-							<div class="TTTContainer unscrolled unscrolledCombo">
-								<div class="unscrolledStandard" style="height: 100%; width: 100%; float: left; display: flex; flex-direction: column; justify-content: center; grid-area: c1; position: relative;">
-									<div class="z-depth-5 TTTBox">
-										<a id="b0" class="TTTSpot" data-spot="0" style="grid-area: b0;">
-											<i class="material-icons TTTIcon"></i>
-										</a>
-										<a id="b1" class="TTTSpot" data-spot="1" style="grid-area: b1;">
-											<i class="material-icons TTTIcon"></i>
-										</a>
-										<a id="b2" class="TTTSpot" data-spot="2" style="grid-area: b2;">
-											<i class="material-icons TTTIcon"></i>
-										</a>
-										<a id="b3" class="TTTSpot" data-spot="3" style="grid-area: b3;">
-											<i class="material-icons TTTIcon"></i>
-										</a>
-										<a id="b4" class="TTTSpot" data-spot="4" style="grid-area: b4;">
-											<i class="material-icons TTTIcon"></i>
-										</a>
-										<a id="b5" class="TTTSpot" data-spot="5" style="grid-area: b5;">
-											<i class="material-icons TTTIcon"></i>
-										</a>
-										<a id="b6" class="TTTSpot" data-spot="6" style="grid-area: b6;">
-											<i class="material-icons TTTIcon"></i>
-										</a>
-										<a id="b7" class="TTTSpot" data-spot="7" style="grid-area: b7;">
-											<i class="material-icons TTTIcon"></i>
-										</a>
-										<a id="b8" class="TTTSpot" data-spot="8" style="grid-area: b8;">
-											<i class="material-icons TTTIcon"></i>
-										</a>
-									</div>
-									<div id="TTTgameOver" class="TTTgameOver">
-										<p id="TTTgameOverText" class="z-depth-3 TTTgameOverText"></p>
-										<a id="TTTrenew" class="z-depth-3 TTTrenew">
-											<i class="material-icons TTTrenewIcon">autorenew</i>
-										</a>
-									</div>
+
+						<div class="doodleContainer unscrolled unscrolledCombo">
+							<div class="doodleGrid1 unscrolledStandard">
+								<div class="z-depth-5 TTTBox">
+									<a id="b0" class="TTTSpot" data-spot="0" style="grid-area: b0;">
+										<i class="material-icons TTTIcon"></i>
+									</a>
+									<a id="b1" class="TTTSpot" data-spot="1" style="grid-area: b1;">
+										<i class="material-icons TTTIcon"></i>
+									</a>
+									<a id="b2" class="TTTSpot" data-spot="2" style="grid-area: b2;">
+										<i class="material-icons TTTIcon"></i>
+									</a>
+									<a id="b3" class="TTTSpot" data-spot="3" style="grid-area: b3;">
+										<i class="material-icons TTTIcon"></i>
+									</a>
+									<a id="b4" class="TTTSpot" data-spot="4" style="grid-area: b4;">
+										<i class="material-icons TTTIcon"></i>
+									</a>
+									<a id="b5" class="TTTSpot" data-spot="5" style="grid-area: b5;">
+										<i class="material-icons TTTIcon"></i>
+									</a>
+									<a id="b6" class="TTTSpot" data-spot="6" style="grid-area: b6;">
+										<i class="material-icons TTTIcon"></i>
+									</a>
+									<a id="b7" class="TTTSpot" data-spot="7" style="grid-area: b7;">
+										<i class="material-icons TTTIcon"></i>
+									</a>
+									<a id="b8" class="TTTSpot" data-spot="8" style="grid-area: b8;">
+										<i class="material-icons TTTIcon"></i>
+									</a>
 								</div>
-								<div class="unscrolledHorizontal" style="float: left; width: auto; grid-area: c2; padding: 16px 0; position: relative;">
-									<p class="TTTHeader">
-										<a class="projectLink" href="https://fetchmi.com" target="_blank">Tic-Tac-Toe Bot</a><br>
-										<span style="line-height: 2rem; font-weight: 500; font-style: italic;">Created November 2017</span><br><br>
-									</p>
-									<p style="margin: 0; font-size: 1.1rem; font-weight: 300; color: #222222; text-align: left; line-height: 1.6rem;">I read about the Minimax Algorithm and decided to test my understanding by using it to create an unbeatable game of Tic-Tac-Toe.</p>
+								<div id="TTTgameOver" class="TTTgameOver">
+									<p id="TTTgameOverText" class="z-depth-3 TTTgameOverText"></p>
+									<a id="TTTrenew" class="z-depth-3 TTTrenew">
+										<i class="material-icons TTTrenewIcon">autorenew</i>
+									</a>
 								</div>
 							</div>
+							<div class="doodleGrid2 unscrolledHorizontal">
+								<p class="doodldeHeader">
+									<a class="projectLink" href="https://fetchmi.com" target="_blank">Tic-Tac-Toe Bot</a><br>
+									<span style="line-height: 2rem; font-weight: 500; font-style: italic;">Created November 2017</span><br>
+								</p>
+								<p style="margin: 0; font-size: 1.1rem; font-weight: 300; color: #222222; text-align: left; line-height: 1.6rem;">An unbeatable game of Tic-Tac-Toe, made using the Minimax Algorithm. Try to beat me!</p>
+							</div>
 						</div>
+
+						<div style="height: 8vh;"></div>
+
+						<div class="doodleContainer unscrolled unscrolledCombo">
+							<!-- <div class="doodleModalBackground"></div>
+							<div class="doodleModal z-depth-5"></div> -->
+							<div class="doodleGrid1 unscrolledStandard">
+								<div class="parsonsBox z-depth-5">
+									<div style="height: 8px;"></div>
+									<a class="parsonsPlay parsonsBlue z-depth-1">
+										<p class="parsonsPlayName">easy</p>
+										<i class="material-icons parsonsPlayArrow">play_arrow</i>
+									</a>
+									<a class="parsonsPlay parsonsGreen z-depth-1">
+										<p class="parsonsPlayName">medium</p>
+										<i class="material-icons parsonsPlayArrow">play_arrow</i>
+									</a><a class="parsonsPlay parsonsRed z-depth-1">
+										<p class="parsonsPlayName">hard</p>
+										<i class="material-icons parsonsPlayArrow">play_arrow</i>
+									</a>
+								</div>
+							</div>
+							<div class="doodleGrid2 unscrolledHorizontal">
+								<p class="doodldeHeader">
+									<a class="projectLink" href="https://fetchmi.com" target="_blank">Parson's Problems</a><br>
+									<span style="line-height: 2rem; font-weight: 500; font-style: italic;">Started May 2018 [IN PROGRESS]</span><br>
+								</p>
+								<p style="margin: 0; font-size: 1.1rem; font-weight: 300; color: #222222; text-align: left; line-height: 1.6rem;">Implementation of a few Parson's Problems, which requires assembling broken blocks of code into the correct order and indentation to solve a problem.</p>
+							</div>
+						</div>
+
 					</div>
 				</div>
 
