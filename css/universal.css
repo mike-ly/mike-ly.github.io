@@ -272,6 +272,7 @@ a:hover {
   line-height: 150%;
   letter-spacing: 0.5px;
   color: #424242;
+  display: block;
 }
 
 .standardText.companyText {
@@ -280,6 +281,15 @@ a:hover {
   line-height: 100%;
   letter-spacing: 1px;
   margin-bottom: 8px;
+}
+
+.standardText.companyText.active {
+  color: #2196f3;
+  transition: all 0s;
+}
+
+.standardText.companyText.active:hover {
+  color: #4fc3f7;
 }
 
 .standardText.positionText {
