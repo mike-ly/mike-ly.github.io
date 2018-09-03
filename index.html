@@ -9,18 +9,17 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script src="jquery-3.2.1.min.js"></script>
+		<script src="jquery-3.3.1.min.js"></script>
 	</head>
 	<body>
-		<div id="homeContainer" class="homeContainer">
-			<div class="landingSection">
-				<div class="landingSectionOverlay unscrolled"></div>
+		<!-- <div id="homeContainer" class="homeContainer">
+				<div class="landingSectionOverlay unscrolled">    
+        </div>
 				<img id="mikeImageHome" class="mikeImage unscrolled" src="images/mikeMainCroppedBig.jpg">
-				<!-- <img id="mikeImageHome" class="mikeImage" src="images/mikeMainCroppedHARD.jpg"> -->
-			</div>
-		</div>
+		</div> -->
+    <img class="mikeImageWide" src="images/mikeMainWIDE.jpg">
 
-		<div id="navContainer" class="navContainer" style="height: 51px; width: 100%; position: relative; position: fixed; top: 0; z-index: 2;">
+		<!-- <div id="navContainer" class="navContainer" style="height: 51px; width: 100%; position: relative; position: fixed; top: 0; z-index: 2;">
 			<div style="height: 50px; padding: 0 5%; width: 100%; font-weight: 300;">
 				<div style="width: 100%; margin: 0 auto;">
 					<a class="z-depth-1 resumeButton" href="mikeResume.pdf" target="_blank" style="display: none;">DOWNLOAD RESUME</a>
@@ -32,7 +31,7 @@
 				</div>
 			</div>
 			<div class="navBottom"></div>
-		</div>
+		</div> -->
 
 		<div class="sectionsBigContainer">
 
@@ -41,12 +40,15 @@
 				<div id="mikeContainer" class="sectionContainer">
 					<div class="sectionSubContainer">
 						<!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #e0e0e0; text-align: center;">MiKE</p-->
-						<p class="sectionSubtitle unscrolled unscrolledStandard">Hey there!</p>
+						<div class="sectionSubtitleContainer unscrolled">
+              <p id="sectionSubtitleProjects" class="sectionSubtitle sectionSubtitleUnscrolled">Nice to meet'cha!</p>
+              <div class="sectionSubtitleUnderline sectionSubtitleUnderlineUnscrolled"></div>
+            </div>
 
 						<div style="height: 6vh;"></div>
 
 						<p class="unscrolled unscrolledStandard aboutText">
-							<span style="font-weight: 700;">My name is Mike Ly.</span> I'm a student with a passion for making things. I love develping apps and websites. I study Computer Science and Mathematics at Emory University. I work as lead developer of FetchMi. During my free time, I enjoy soccer,  bouldering, and photography.
+							<span style="font-weight: 300;">My name is Mike.</span> I'm a student with a passion for making things. I love develping apps and websites. I study Computer Science and Mathematics at Emory University. I work as lead developer of FetchMi. During my free time, I enjoy soccer,  bouldering, and photography.
 						</p>
 
 						<!--div style="height: 8vh;"></div>
@@ -138,77 +140,204 @@
 					</div>
 				</div> -->
 
-				<div id="projectsContainer" class="sectionContainer" style="background: #fafafa;">	
+        <div id="projectsContainerCurrent" class="sectionContainer alternate"> 
+          <div class="sectionSubContainer">         
+
+            <!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #e0e0e0; text-align: center;">PR0JECTS</p-->
+            <div class="sectionSubtitleContainer unscrolled">
+              <p id="sectionSubtitleProjects" class="sectionSubtitle sectionSubtitleUnscrolled">What I'm up to.</p>
+              <div class="sectionSubtitleUnderline sectionSubtitleUnderlineUnscrolled"></div>
+            </div>
+            <div style="height: 8vh;"></div>
+
+            <div class="projectsSubGrid unscrolled unscrolledCombo">
+              <div class="z-depth-5 projectCard unscrolledStandard" style="grid-area: card;">
+                <div class="projectCardCover" style="background: #fff;">
+                  <img src="images/emory.jpg" style="height: auto; width: 50%; margin: 0 auto; object-fit: ;">
+                </div>
+              </div>
+              <div class="projectCardDescriptionContainer unscrolledHorizontal" style="grid-area: description;">
+                <div class="projectCardDescription">
+                  <p class="standardText companyText">Emory University</p>
+                  <p class="standardText positionText">Bachelor of Science, Computer Science</p>
+                  <p class="standardText positionText">Bachelor of Science, Mathematics</p>
+                  <p class="standardText dateText">Expected May 2018</p>
+                  <p class="standardText dateText">Atlanta, GA</p>
+                </div>
+                <div class="projectCardDescription">
+                  <p class="standardText descriptionText">
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="projectsSubGrid unscrolled unscrolledCombo">
+              <div class="z-depth-5 projectCard unscrolledStandard" style="grid-area: card;">
+                <div class="projectCardCover" style="background: #fff;">
+                  <img src="images/grady.jpg" style="height: auto; width: 50%; margin: 0 auto; object-fit: ;">
+                </div>
+              </div>
+              <div class="projectCardDescriptionContainer unscrolledHorizontal" style="grid-area: description;">
+                <!-- <p class="projectCardDescription">
+                  <a class="projectLink active" href="https://fetchmi.com" target="_blank"><span>FetchMi</a></span><br>
+                  <span style="line-height: 2rem; font-weight: 500;">Cofounder and Front-end developer, <span style="font-style: italic;"></span></span><br>
+                  <span style="font-size: 14px;">January 2017 - May 2018<br></span>
+                  Atlanta, GA
+                  <br><br>
+                </p> -->
+                <div class="projectCardDescription">
+                  <p class="standardText companyText">Grady Health System</p>
+                  <p class="standardText positionText">Research Assistant</p>
+                  <p class="standardText dateText">Since August 2018</p>
+                  <p class="standardText dateText">Atlanta, GA</p>
+                </div>
+                <div class="projectCardDescription">
+                  <p class="standardText descriptionText">
+                  </p>
+                </div>
+                <!-- <p class="projectCardDescription" style="text-align: left;">FetchMi brings companies throughout Atlanta onto a single platform. Our goal is to help people learn about and compare services through objective information, reviews, and messaging.</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+				<div id="projectsContainer" class="sectionContainer">	
 					<div class="sectionSubContainer">					
 
 						<!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #e0e0e0; text-align: center;">PR0JECTS</p-->
-						<p id="sectionSubtitleProjects" class="sectionSubtitle unscrolled unscrolledStandard">Here's my work.</p>
+						<div class="sectionSubtitleContainer unscrolled">
+              <p id="sectionSubtitleProjects" class="sectionSubtitle sectionSubtitleUnscrolled">What I've done.</p>
+              <div class="sectionSubtitleUnderline sectionSubtitleUnderlineUnscrolled"></div>
+            </div>
 						<div style="height: 8vh;"></div>
 
-						<div class="projectsGrid">
-
-							<div class="projectsSubGrid unscrolled unscrolledCombo" style="grid-area: card1;">
-								<div class="z-depth-5 projectCard unscrolledStandard" style="grid-area: card;">
-									<div class="projectCardCover" style="background: #fff;">
-										<p style="font-size: 2.5rem; color: #222222; font-weight: 200; text-align: center;">Fetch<span style="color: #4db6ac;">Mi</span></p>
-									</div>
-								</div>
-								<div class="projectCardDescriptionContainer unscrolledHorizontal" style="grid-area: description;">
-									<p class="projectCardDescription">
-										<a class="projectLink active" href="https://fetchmi.com" target="_blank"><span>FetchMi&nbsp;<i class="material-icons" style="color: #2196f3;">open_in_new</i></a></span><br>
-										<span style="line-height: 2rem; font-weight: 500;">Cofounder, <span style="font-style: italic;">Since January 2017</span></span><br>
-										<span style="font-weight: 500;">Atlanta, GA</span><br><br>
-									</p>
-									<p class="projectCardDescription" style="text-align: left;">FetchMi brings companies throughout Atlanta onto a single platform. Our goal is to help people learn about and compare services through objective information, reviews, and messaging.</p>
-								</div>
-							</div>
-
-							<div class="projectsSubGrid unscrolled unscrolledCombo" style="grid-area: card2;">
-								<div class="z-depth-5 projectCard unscrolledStandard" target="_blank" style="grid-area: card;">
-									<div class="projectCardCover" style="background: #002878;">
-										<img src="duckArt.png" style="height: auto; width: 50%; margin: 0 auto; object-fit: ;">
-									</div>
-								</div>
-								<div class="projectCardDescriptionContainer unscrolledHorizontal" style="grid-area: description;">
-									<p class="projectCardDescription">
-										<a class="projectLink"><span>What the DUC?&nbsp;</span></a><br>
-										<span style="line-height: 2rem; font-weight: 500;">Creator, <span style="font-style: italic;">Since January 2018</span></span><br>
-										<span style="font-weight: 500;">Atlanta, GA</span><br><br>
-									</p>
-									<p class="projectCardDescription" style="text-align: left;">What the DUC? is an app I made for Emory's dining hall (Dobbs University Center). It displays a daily rating based on students' experiences with the DUC, so others can decide whether they need to find an alternative food place for that day.</p>
+            <div class="projectsSubGrid unscrolled unscrolledCombo">
+              <div class="z-depth-5 projectCard unscrolledStandard" style="grid-area: card;">
+                <div class="projectCardCover" style="background: #fff;">
+                  <img src="images/informatica.jpg" style="height: auto; width: 50%; margin: 0 auto; object-fit: ;">
+                </div>
+              </div>
+              <div class="projectCardDescriptionContainer unscrolledHorizontal" style="grid-area: description;">
+                <div class="projectCardDescription">
+                  <p class="standardText companyText">Informatica</p>
+                  <p class="standardText positionText">QA Engineering Intern</p>
+                  <p class="standardText dateText">May 2018 - August 2018</p>
+                  <p class="standardText dateText">Redwood City, CA</p>
+                </div>
+                <div class="projectCardDescription">
+                  <p class="standardText descriptionText">
+                  </p>
+                </div>
+              </div>
+            </div>
+						<div class="projectsSubGrid unscrolled unscrolledCombo">
+							<div class="z-depth-5 projectCard unscrolledStandard" style="grid-area: card;">
+								<div class="projectCardCover" style="background: #fff;">
+									<p style="font-size: 2.5rem; color: #222222; font-weight: 200; text-align: center;">Fetch<span style="color: #4db6ac;">Mi</span></p>
 								</div>
 							</div>
-
-							<div class="projectsSubGrid unscrolled unscrolledCombo" style="grid-area: card3;">
-								<div class="z-depth-5 projectCard unscrolledStandard" target="_blank" style="grid-area: card;">
-									<div class="projectCardCover" style="background: #6600CC;">
-										<img src="images/FlashFood.png" style="height: auto; width: 50%; margin: 0 auto; object-fit: ;">
-									</div>
-								</div>
-								<div class="projectCardDescriptionContainer unscrolledHorizontal" style="grid-area: description;">
-									<p class="projectCardDescription">
-										<a class="projectLink">Flash Food</a><br>
-										<span style="line-height: 2rem; font-weight: 500;">Creator, <span style="font-style: italic;">Since December 2017</span></span><br>
-										<span style="font-weight: 500;">Atlanta, GA</span><br><br>
-									</p>
-									<p class="projectCardDescription" style="text-align: left;">Flash Food is an app that takes a preferred distance, price, and category list and tells you where to eat. A friend and I decided to make this app as an introduction to React Native and Redux.</p>
+							<div class="projectCardDescriptionContainer unscrolledHorizontal" style="grid-area: description;">
+                <div class="projectCardDescription">
+                  <p class="standardText companyText">FetchMi</p>
+                  <p class="standardText positionText">Cofounder / Front-end developer</p>
+                  <p class="standardText dateText">January 2017 - May 2018</p>
+                  <p class="standardText dateText">Atlanta, GA</p>
+                </div>
+                <div class="projectCardDescription">
+                  <p class="standardText descriptionText">
+                    <br>
+                    FetchMi brings companies throughout Atlanta onto a single platform. Our goal is to help people learn about and compare services through objective information, reviews, and messaging.
+                  </p>
+                </div>
+								<!-- <p class="projectCardDescription" style="text-align: left;">FetchMi brings companies throughout Atlanta onto a single platform. Our goal is to help people learn about and compare services through objective information, reviews, and messaging.</p> -->
+							</div>
+						</div>
+						<div class="projectsSubGrid unscrolled unscrolledCombo">
+							<div class="z-depth-5 projectCard unscrolledStandard" style="grid-area: card;">
+								<div class="projectCardCover" style="background: #fff;">
+									<img src="images/emory.jpg" style="height: auto; width: 50%; margin: 0 auto; object-fit: ;">
 								</div>
 							</div>
+							<div class="projectCardDescriptionContainer unscrolledHorizontal" style="grid-area: description;">
+								<div class="projectCardDescription">
+                  <p class="standardText companyText">Emory University</p>
+                  <p class="standardText positionText">Research Assistant</p>
+                  <p class="standardText dateText">December 2017 - May 2018</p>
+                  <p class="standardText dateText">Atlanta, GA</p>
+                </div>
+                <div class="projectCardDescription">
+                  <p class="standardText descriptionText">
+                  </p>
+                </div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-							<div class="projectsSubGrid unscrolled unscrolledCombo" style="grid-area: card4;">
-								<div class="z-depth-5 projectCard unscrolledStandard" target="_blank" style="grid-area: card;">
-									<div class="projectCardCover" style="background: #fff;">
-										<img src="images/mikeMainCroppedSmall.jpg" style="height: 100%; width: 100%; object-fit: cover;">
-									</div>
+				<div id="projectsContainer" class="sectionContainer alternate">	
+					<div class="sectionSubContainer">					
+
+						<!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #e0e0e0; text-align: center;">PR0JECTS</p-->
+						<div class="sectionSubtitleContainer unscrolled">
+              <p id="sectionSubtitleProjects" class="sectionSubtitle sectionSubtitleUnscrolled">Here's some projects.</p>
+              <div class="sectionSubtitleUnderline sectionSubtitleUnderlineUnscrolled"></div>
+            </div>
+
+						<div style="height: 8vh;"></div>
+
+						<div class="projectsSubGrid unscrolled unscrolledCombo">
+							<div class="z-depth-5 projectCard unscrolledStandard" style="grid-area: card;">
+                <div class="projectCardCover" style="background: #fff;">
+                  <img src="images/quack.png" style="height: auto; width: 50%; margin: 0 auto; object-fit: ;">
+                </div>
+              </div>
+							<div class="projectCardDescriptionContainer unscrolledHorizontal" style="grid-area: description;">
+								<div class="projectCardDescription">
+                  <p class="standardText companyText">Quack</p>
+                  <p class="standardText positionText">Full-stack developer</p>
+                  <p class="standardText dateText">Since May 2018</p>
+                </div>
+                <div class="projectCardDescription">
+                  <p class="standardText descriptionText">
+                  </p>
+                </div>
+							</div>
+						</div>
+
+						<div class="projectsSubGrid unscrolled unscrolledCombo">
+							<div class="z-depth-5 projectCard unscrolledStandard" target="_blank" style="grid-area: card;">
+								<div class="projectCardCover" style="background: #6600CC;">
+									<img src="images/FlashFood.png" style="height: auto; width: 50%; margin: 0 auto; object-fit: ;">
 								</div>
-								<div class="projectCardDescriptionContainer unscrolledHorizontal" style="grid-area: description;">
-									<p class="projectCardDescription">
-										<a class="projectLink" href="https://fetchmi.com" target="_blank">This Website</a><br>
-										<span style="line-height: 2rem; font-weight: 500;">Creator, <span style="font-style: italic;">Since November 2017</span></span><br>
-										<span style="font-weight: 500;">Atlanta, GA</span><br><br>
-									</p>
-									<p class="projectCardDescription" style="text-align: left;">I made this website as a place where I could express myself, design without a framework, and easily experiment with code. I hope you enjoy it!</p>
+							</div>
+							<div class="projectCardDescriptionContainer unscrolledHorizontal" style="grid-area: description;">
+								<div class="projectCardDescription">
+                  <p class="standardText companyText">Flash Food</p>
+                  <p class="standardText positionText">Front-end developer</p>
+                  <p class="standardText dateText">Since December 2017</p>
+                </div>
+                <div class="projectCardDescription">
+                  <p class="standardText descriptionText">
+                  </p>
+                </div>
+							</div>
+						</div>
+
+						<div class="projectsSubGrid unscrolled unscrolledCombo">
+							<div class="z-depth-5 projectCard unscrolledStandard" target="_blank" style="grid-area: card;">
+								<div class="projectCardCover" style="background: #fff;">
+									<img src="images/mikeMainCroppedSmall.jpg" style="height: 100%; width: 100%; object-fit: cover;">
 								</div>
+							</div>
+							<div class="projectCardDescriptionContainer unscrolledHorizontal" style="grid-area: description;">
+								<div class="projectCardDescription">
+                  <p class="standardText companyText">This website</p>
+                  <p class="standardText positionText">Front-end developer</p>
+                  <p class="standardText dateText">Since November 2017</p>
+                </div>
+                <div class="projectCardDescription">
+                  <p class="standardText descriptionText">
+                  </p>
+                </div>
 							</div>
 						</div>
 					</div>
@@ -217,7 +346,10 @@
 				<div id="doodlesContainer" class="sectionContainer">					
 					<div class="sectionSubContainer">
 						<!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #e0e0e0; text-align: center;">D00DLES</p-->
-						<p class="sectionSubtitle unscrolled unscrolledStandard">Just for fun.</p>
+						<div class="sectionSubtitleContainer unscrolled">
+              <p id="sectionSubtitleProjects" class="sectionSubtitle sectionSubtitleUnscrolled">Just for fun.</p>
+              <div class="sectionSubtitleUnderline sectionSubtitleUnderlineUnscrolled"></div>
+            </div>
 						<div style="height: 8vh;"></div>
 
 						<div class="doodleContainer unscrolled unscrolledCombo">
@@ -259,45 +391,67 @@
 								</div>
 							</div>
 							<div class="doodleGrid2 unscrolledHorizontal">
-								<p class="doodldeHeader">
-									<a class="projectLink" href="https://fetchmi.com" target="_blank">Tic-Tac-Toe Bot</a><br>
-									<span style="line-height: 2rem; font-weight: 500; font-style: italic;">Created November 2017</span><br>
-								</p>
-								<p style="margin: 0; font-size: 1.1rem; font-weight: 300; color: #222222; text-align: left; line-height: 1.6rem;">An unbeatable game of Tic-Tac-Toe, made using the Minimax Algorithm. Try to beat me!</p>
+								<div class="projectCardDescription">
+                  <p class="standardText companyText">Tic-Tac-Toe bot</p>
+                  <p class="standardText dateText">Created November 2017</p>
+                </div>
+                <div class="projectCardDescription">
+                  <p class="standardText descriptionText">
+                  </p>
+                </div>
 							</div>
 						</div>
 
-						<div style="height: 8vh;"></div>
+						<div style="height: 64px;"></div>
 
-						<div class="doodleContainer unscrolled unscrolledCombo">
-							<!-- <div class="doodleModalBackground"></div>
-							<div class="doodleModal z-depth-5"></div> -->
+						<!-- <div class="doodleContainer unscrolled unscrolledCombo">
+							<div id="doodleModalContainer">
+								<div class="doodleModalBackground" onclick="closeDoodleModal()"></div>
+								<div id="doodleModal" class="doodleModal z-depth-5">
+									<div class="doodleModalTop">
+										<p class="doodleModalTopHeader">Parson's Problem: Java</p>
+										<a class="closeButtonContainer" onclick="closeDoodleModal()">
+											<div class="closeButtonLine closeButtonLine1"></div>
+											<div class="closeButtonLine closeButtonLine2"></div>
+										</a>
+									</div>
+									<div class="doodleModalContentContainer">
+										<p class="parsonsProblemDescription">
+											Implementation of a few Parson's Problems, which requires assembling broken blocks of code into the correct order to solve a problem.
+										</p>
+										<div class="parsonsGrid">
+											<div class="parsonsBlanks"></div>
+										</div>
+									</div>
+								</div>
+							</div>
 							<div class="doodleGrid1 unscrolledStandard">
 								<div class="parsonsBox z-depth-5">
 									<div style="height: 8px;"></div>
-									<a class="parsonsPlay parsonsBlue z-depth-1">
-										<p class="parsonsPlayName">easy</p>
+									<a class="parsonsPlay parsonsBlue z-depth-1"onclick="openDoodleModal()">
+										<p class="parsonsPlayName">JavaScript</p>
 										<i class="material-icons parsonsPlayArrow">play_arrow</i>
 									</a>
-									<a class="parsonsPlay parsonsGreen z-depth-1">
-										<p class="parsonsPlayName">medium</p>
+									<a class="parsonsPlay parsonsGreen z-depth-1"onclick="openDoodleModal()">
+										<p class="parsonsPlayName">Java</p>
 										<i class="material-icons parsonsPlayArrow">play_arrow</i>
-									</a><a class="parsonsPlay parsonsRed z-depth-1">
-										<p class="parsonsPlayName">hard</p>
+									</a>
+									<a class="parsonsPlay parsonsRed z-depth-1"onclick="openDoodleModal()">
+										<p class="parsonsPlayName">Python</p>
 										<i class="material-icons parsonsPlayArrow">play_arrow</i>
 									</a>
 								</div>
 							</div>
 							<div class="doodleGrid2 unscrolledHorizontal">
 								<p class="doodldeHeader">
-									<a class="projectLink" href="https://fetchmi.com" target="_blank">Parson's Problems</a><br>
+									<span class="projectLink">Parson's Problems</span><br>
 									<span style="line-height: 2rem; font-weight: 500; font-style: italic;">Started May 2018 [IN PROGRESS]</span><br>
 								</p>
-								<p style="margin: 0; font-size: 1.1rem; font-weight: 300; color: #222222; text-align: left; line-height: 1.6rem;">Implementation of a few Parson's Problems, which requires assembling broken blocks of code into the correct order and indentation to solve a problem.</p>
+								<p style="margin: 0; font-size: 1.1rem; font-weight: 300; color: #222222; text-align: left; line-height: 1.6rem;">Implementation of a few Parson's Problems, which requires assembling broken blocks of code into the correct order to solve a problem.</p>
 							</div>
 						</div>
 
-					</div>
+					</div> -->
 				</div>
 
 
@@ -348,16 +502,19 @@
 			</div>
 
 
-			<div id="contactContainer" class="contactContainer" style="overflow: auto; width: auto; position: relative; text-align: center; height: 100vh; background: linear-gradient(0deg, #e8f5e9, #fff); display: flex; flex-direction: column; justify-content: center;">
+			<div id="contactContainer" class="contactContainer" style="overflow: auto; width: auto; position: relative; text-align: center; height: 100vh; background: #fff; display: flex; flex-direction: column; justify-content: center;">
 				<div class="sectionSubContainer">
 					<!--p style="font-size: 2rem; font-weight: 100; letter-spacing: 1px; line-height: 2rem; height: 2rem; margin: 0; color: #616161; text-align: center;">C0NTACT</p-->
-					<p class="sectionSubtitle unscrolled unscrolledStandard">Get in touch.</p>
+					<div class="sectionSubtitleContainer unscrolled">
+            <p id="sectionSubtitleProjects" class="sectionSubtitle sectionSubtitleUnscrolled">I'd love to talk!</p>
+            <!-- <div class="sectionSubtitleUnderline center sectionSubtitleUnderlineUnscrolled"></div> -->
+          </div>
 
 					<div style="height: 6vh;"></div>
 
 					<div style="clear: both; display: inline-block; margin: 0 auto; color: #fff; ">
 						<a class="contactLink unscrolled unscrolledStandard" href="mailto:michael.ly@emory.edu?subject=Whats up!"><img src="images/gmailIcon.png" class="contactIcon hoverable z-depth-4" style=" border-radius: 15px;"></a>
-						<a class="contactLink unscrolled unscrolledStandard" href="https://www.linkedin.com/in/mikelyxd" target="_blank"><img src="images/linkedinIcon.png" class="contactIcon hoverable z-depth-4" style=" border-radius: 15px;"></a>
+						<a class="contactLink unscrolled unscrolledStandard" href="https://www.linkedin.com/in/lymike" target="_blank"><img src="images/linkedinIcon.png" class="contactIcon hoverable z-depth-4" style=" border-radius: 15px;"></a>
 					</div>
 				</div>
 			</div>
@@ -641,21 +798,35 @@
 	    	console.log(unscrolled[i] + '   ' + $(unscrolled[i]).offset().top);
 		}
 
+    for (i = numScrolled; i < unscrolled.length; i++) {
+      if (($(unscrolled[i]).offset().top + $(window).height() / 10) <= $(window).height() + $(window).scrollTop()) {
+        unscrolled[i].classList.add('scrolled');
+        numScrolled++;
+      }
+    }
+
 		$(document).on('scroll', function() {
 
 			if (numScrolled < unscrolled.length) {
 				for (i = numScrolled; i < unscrolled.length; i++) {
-					if (($(unscrolled[i]).offset().top + $(window).height() / 4) <= $(window).height() + $(window).scrollTop()) {
-						$(unscrolled[i]).addClass('scrolled');
+					if (($(unscrolled[i]).offset().top + $(window).height() / 10) <= $(window).height() + $(window).scrollTop()) {
 						unscrolled[i].classList.add('scrolled');
 						numScrolled++;
-						console.log(numScrolled);
-						// TODO: NEED TO FIX THIS, NOT SHOWING UP
 					}
 				}
 			}
 
 	     });
+
+		function openDoodleModal() {
+			document.getElementById('doodleModalContainer').classList.add('active');
+		}
+
+		function closeDoodleModal() {
+			document.getElementById('doodleModalContainer').classList.remove('active');
+		}
+
+
 
 
 
@@ -678,23 +849,23 @@
 
 		// document.getElementById('homeLinkMike').addEventListener('click', function(e) { scrollTo(document.getElementById('mikeContainer')); });
 
-		document.getElementById('navItem1').addEventListener('click', function(e) { scrollTo(document.getElementById('mikeContainer')); });
+		//document.getElementById('navItem1').addEventListener('click', function(e) { scrollTo(document.getElementById('mikeContainer')); });
 
 		// document.getElementById('homeLinkProjects').addEventListener('click', function(e) { scrollTo(document.getElementById('projectsContainer')); });
 
-		document.getElementById('navItem2').addEventListener('click', function(e) { scrollTo(document.getElementById('projectsContainer')); });
+		// document.getElementById('navItem2').addEventListener('click', function(e) { scrollTo(document.getElementById('projectsContainer')); });
 
 		// document.getElementById('homeLinkDoodles').addEventListener('click', function(e) { scrollTo(document.getElementById('doodlesContainer')); });
 
-		document.getElementById('navItem3').addEventListener('click', function(e) { scrollTo(document.getElementById('doodlesContainer')); });
+		// document.getElementById('navItem3').addEventListener('click', function(e) { scrollTo(document.getElementById('doodlesContainer')); });
 
 		// document.getElementById('homeLinkPhotos').addEventListener('click', function(e) { scrollTo(document.getElementById('photosContainer')); });
 
 		// document.getElementById('homeLinkContact').addEventListener('click', function(e) { scrollTo(document.getElementById('contactContainer')); });
 
-		document.getElementById('navItem4').addEventListener('click', function(e) { scrollTo(document.getElementById('photosContainer')); });
+		// document.getElementById('navItem4').addEventListener('click', function(e) { scrollTo(document.getElementById('photosContainer')); });
 
-		document.getElementById('navItem5').addEventListener('click', function(e) { scrollTo(document.getElementById('contactContainer')); });
+		// document.getElementById('navItem5').addEventListener('click', function(e) { scrollTo(document.getElementById('contactContainer')); });
 
 		function scrollTo(e) {
 			$('html, body').animate({ scrollTop: $(e).offset().top }, 500, 'easeInOutExpo');
@@ -954,6 +1125,19 @@
 
 	/*==========================================================================*/
 	/* -TTT END */
+	/*==========================================================================*/
+
+
+	/*==========================================================================*/
+	/* -PARSONS START */
+	/*==========================================================================*/
+
+	function toggleDoodleModalParsons(element) {
+
+	}
+
+	/*==========================================================================*/
+	/* -PARSONS END */
 	/*==========================================================================*/
 
 	</script>
