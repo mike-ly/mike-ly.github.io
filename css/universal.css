@@ -954,7 +954,7 @@ a:hover {
 
 .standardText.skillLevel {
   font-size: 1rem;
-  color: #bdbdbd;
+  color: #9e9e9e;
   float; left;
   transition: all 0.5s 0.5s;
 }
