@@ -174,7 +174,7 @@ a:hover {
 .sectionContainer {
 	width: auto;
 	position: relative;
-	padding: 20vh 20%;
+	padding: 20vh 10%;
 }
 
 .sectionContainer.alternate {
@@ -805,7 +805,7 @@ a:hover {
 
 .aboutText {
 	font-size: 1.5rem;
-	font-weight: 200;
+	font-weight: 300;
 	line-height: 180%;
 	margin: 0;
 	text-align: left;
@@ -930,11 +930,11 @@ a:hover {
 
 .experienceBarContainer {
   width: 100%;
-  height: 18px;
+  height: 20px;
   border-radius: 3px;
   overflow: hidden;
-  border: 1px solid grey;
-  padding: 2px;
+  border: 1px solid #bdbdbd;
+  padding: 1px;
   transition: all 1s 0.1s;
 }
 
@@ -951,6 +951,7 @@ a:hover {
   color: #757575;
   margin-right: 12px;
   float: left;
+  font-weight: 400;
 }
 
 .standardText.skillLevel {
